@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soyle</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="burger-menu" id="burger-menu">
+      <a class="btn btn-login" href="#!">Войти</a>
+      <div class="header__nav">
+        <a class="header__nav-link" href="#!">Уроки</a>
+        <a class="header__nav-link" href="#!">Говорим</a>
+        <a class="header__nav-link" href="#!">Читаем</a>
+        <a class="header__nav-link" href="#!">пишем</a>
+        <a class="header__nav-link" href="#!">полезное</a>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo-link" href="#!">
+            <img class="logo-img" src="../images/logo.svg" alt="logo">
+          </a>
+          <div class="btn btn-lang" 
+          onmouseover="document.getElementById('btn-lang__list').style.display='block';" 
+          onmouseout="document.getElementById('btn-lang__list').style.display='none';">
+            <img class="btn-lang__img" src="../images/icon-planet.svg" alt="planet">
+            <span class="btn-lang__text element-dt">На русском</span>
+            <span class="btn-lang__text element-mb">RU</span>
+            <svg class="header-tringle">
+              <use xlink:href="#tringle"></use>
+            </svg>
+            <ul class="btn-lang__list" id="btn-lang__list">
+              <li class="btn-lang__item">
+                <a class="btn-lang__item--link" href="#!">
+                  <span class="btn-lang__item--dt element-dt">Русский</span>
+                  <span class="btn-lang__item--mb element-mb">ru</span>
+                </a>
+              </li>
+              <li class="btn-lang__item">
+                <a class="btn-lang__item--link" href="#!">
+                  <span class="btn-lang__item--dt element-dt">English</span>
+                  <span class="btn-lang__item--mb element-mb">en</span>
+                </a>
+              </li>
+              <li class="btn-lang__item">
+                <a class="btn-lang__item--link" href="#!">
+                  <span class="btn-lang__item--dt element-dt">Turkish</span>
+                  <span class="btn-lang__item--mb element-mb">tr</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a class="btn btn-login element-dt" href="#!">Войти</a>
+          <div class="burger-btn element-mb" id="burger-btn">
+            <span class="burger-btn__line"></span>
+            <span class="burger-btn__line"></span>
+            <span class="burger-btn__line"></span>
+          </div>
+        </div>
+        <div class="header__nav element-dt">
+          <a class="header__nav-link" href="#!">Уроки</a>
+          <a class="header__nav-link" href="#!">Говорим</a>
+          <a class="header__nav-link" href="#!">Читаем</a>
+          <a class="header__nav-link" href="#!">пишем</a>
+          <a class="header__nav-link" href="#!">полезное</a>
+        </div>
+      </div>
+    </header>

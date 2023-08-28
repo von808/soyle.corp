@@ -1,0 +1,126 @@
+.header {
+  border-bottom: 1px rgba($gray, 0.2) solid;
+
+  &__inner {
+    min-height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &-tringle {
+    width: 12px;
+    height: 10px;
+    fill: $blue;
+    z-index: 5;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3px 0 18px;
+  }
+
+  &__nav-link {
+    color: $black;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+    text-transform: uppercase;
+    transition: color 0.1s ease-out;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.logo {
+  &-link {
+    display: block;
+    margin-right: auto;
+  }
+
+  &-img {
+    width: 146px;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.btn {
+  &-login {
+    padding: 12px 42px 13px 43px;
+    text-transform: uppercase;
+    width: fit-content;
+  }
+
+  &-lang {
+    background: $white;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.10);
+
+    color: $blue;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    padding: 0 15px;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+  }
+
+  &-lang__img {
+    width: 22px;
+    height: 22px;
+    object-fit: cover;
+    z-index: 5;
+  }
+
+  &-lang__text {
+    z-index: 5;
+  }
+
+  &-lang__list {
+    width: 100%;
+    padding: 30px 5px 10px;
+    background-color: $white;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    z-index: 4;
+    display: none;
+  }
+
+  &-lang__item--link {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $black;
+    text-decoration: none;
+    display: block;
+    padding: 3px 10px;
+    border-radius: 25px;
+    transition: color 0.1s ease-out, background 0.1s ease-out;
+
+    &:hover {
+      color: $white;
+      background: #A6AFB9;
+    }
+  }
+
+  &-lang__item--mb {
+    display: none;
+  }
+}

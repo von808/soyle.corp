@@ -116,6 +116,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  position: relative;
 }
 
 .main {
@@ -129,11 +130,223 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .container-fluid {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 25px;
+  background: #3E80CE;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 180%;
+}
+
+.element-dt {
+  display: inline-block;
+}
+.element-mb {
+  display: none;
+}
+
+.burger-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #3E80CE;
+  position: relative;
+  cursor: pointer;
+  z-index: 55;
+}
+.burger-btn__line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  transform-origin: center;
+  transition: all 0.1s ease-out;
+}
+.burger-btn__line:first-child {
+  top: calc(50% - 9px);
+}
+.burger-btn__line:last-child {
+  top: calc(50% + 9px);
+}
+.burger-btn.active .burger-btn__line:first-child {
+  opacity: 1;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.burger-btn.active .burger-btn__line {
+  opacity: 0;
+}
+.burger-btn.active .burger-btn__line:last-child {
+  opacity: 1;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.burger-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 260px;
+  height: 100%;
+  padding: 20px 10px;
+  background: #fff;
+  box-shadow: 2px 0 15px 0 rgba(0, 0, 0, 0.3);
+}
+.burger-menu.active {
+  display: block;
+}
+.burger-menu .header__nav {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.burger-menu .header__nav-link {
+  padding: 5px 0;
+}
+
+.header {
+  border-bottom: 1px rgba(166, 175, 185, 0.2) solid;
+}
+.header__inner {
+  min-height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.header-tringle {
+  width: 12px;
+  height: 10px;
+  fill: #3E80CE;
+  z-index: 5;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3px 0 18px;
+}
+.header__nav-link {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 180%;
+  text-transform: uppercase;
+  transition: color 0.1s ease-out;
+}
+.header__nav-link:hover {
+  color: #3E80CE;
+}
+
+.logo-link {
+  display: block;
+  margin-right: auto;
+}
+.logo-img {
+  width: 146px;
+  height: auto;
+  object-fit: cover;
+}
+
+.btn-login {
+  padding: 12px 42px 13px 43px;
+  text-transform: uppercase;
+  width: fit-content;
+}
+.btn-lang {
+  background: #fff;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
+  color: #3E80CE;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 180%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  padding: 0 15px;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+.btn-lang__img {
+  width: 22px;
+  height: 22px;
+  object-fit: cover;
+  z-index: 5;
+}
+.btn-lang__text {
+  z-index: 5;
+}
+.btn-lang__list {
+  width: 100%;
+  padding: 30px 5px 10px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  z-index: 4;
+  display: none;
+}
+.btn-lang__item--link {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 3px 10px;
+  border-radius: 25px;
+  transition: color 0.1s ease-out, background 0.1s ease-out;
+}
+.btn-lang__item--link:hover {
+  color: #fff;
+  background: #A6AFB9;
+}
+.btn-lang__item--mb {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .element-dt {
+    display: none;
+  }
+  .element-mb {
+    display: block;
+  }
+  .logo-img {
+    width: 120px;
+  }
+  .btn-lang {
+    height: 35px;
+    padding: 0 5px;
+  }
+  .btn-lang__list {
+    padding: 13px 5px 10px;
+  }
 }

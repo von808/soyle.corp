@@ -1,31 +1,130 @@
 body {
-    overflow-x: hidden;
-    min-width: 320px;
-    font-family: montserrat, sans-serif;
+  overflow-x: hidden;
+  min-width: 320px;
+  font-family: montserrat, sans-serif;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
 }
 
 .main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .footer {
-    flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .container {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 15px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .container-fluid {
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 0 10px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 25px;
+  background: $blue;
+
+  color: $white;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 180%;
+}
+
+.element {
+  &-dt {
+    display: inline-block;
+  }
+
+  &-mb {
+    display: none;
+  }
+}
+
+.burger-btn {
+  width: 40px;
+  height: 40px;
+  background-color: $blue;
+  position: relative;
+  cursor: pointer;
+  z-index: 55;
+
+  &__line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 28px;
+    height: 3px;
+    background-color: $white;
+    transform-origin: center;
+    transition: all 0.1s ease-out;
+  }
+
+  &__line:first-child {
+    top: calc(50% - 9px);
+  }
+
+  &__line:last-child {
+    top: calc(50% + 9px);
+  }
+
+  &.active .burger-btn__line:first-child {
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &.active .burger-btn__line {
+    opacity: 0;
+  }
+
+  &.active .burger-btn__line:last-child {
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+.burger-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 260px;
+  height: 100%;
+  padding: 20px 10px;
+  background: $white;
+  box-shadow: 2px 0 15px 0 rgba(0, 0, 0, 0.3);
+
+  &.active{
+    display: block;
+  }
+
+  .header__nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .header__nav-link {
+    padding: 5px 0;
+  }
 }

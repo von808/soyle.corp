@@ -1,0 +1,22 @@
+@media (max-width:768px) {
+  .element-dt {
+    display: none;
+  }
+
+  .element-mb {
+    display: block;
+  }
+
+  .logo-img {
+    width: 120px;
+  }
+
+  .btn-lang {
+    height: 35px;
+    padding: 0 5px;
+  }
+
+  .btn-lang__list {
+    padding: 13px 5px 10px;
+  }
+}
