@@ -114,7 +114,7 @@ body {
   background: $white;
   box-shadow: 2px 0 15px 0 rgba(0, 0, 0, 0.3);
 
-  &.active{
+  &.active {
     display: block;
   }
 
@@ -124,7 +124,24 @@ body {
     padding: 10px;
   }
 
+  .user {
+    margin-bottom: 15px;
+  }
+
+  .user__arrow {
+    margin-left: 10px
+  }
+
   .header__nav-link {
     padding: 5px 0;
+    font-size: 14px;
+  }
+
+  .header__nav-menu {
+    width: 240px;
+  }
+
+  .header__nav-menu-link:last-child {
+    font-size: 16px;
   }
 }
