@@ -31,6 +31,17 @@ body {
   padding: 0 10px;
 }
 
+.title {
+  color: $blue;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -45,6 +56,54 @@ body {
   font-style: normal;
   font-weight: 800;
   line-height: 180%;
+
+  &:hover {
+    background: rgba($blue, 0.9);
+  }
+}
+
+.btn-orange {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 25px;
+  background: $orange;
+
+  color: $white;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 180%;
+
+  &:hover {
+    background: rgba($orange, 0.9);
+  }
+}
+
+.btn-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 25px;
+
+  color: $blue;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 180%;
+
+  background: transparent;
+  border: 2px solid $blue;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $white;
+    background-color: $blue;
+  }
 }
 
 .element {
@@ -143,5 +202,216 @@ body {
 
   .header__nav-menu-link:last-child {
     font-size: 16px;
+  }
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  max-width: 550px;
+  width: 100%;
+
+  &__item {
+    max-width: 265px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__company {}
+
+  &__phone {
+    // .form__input {
+    //   padding: 11px 6px 11px 62px;
+    // }
+  }
+
+  &__mail {}
+
+  &__headcount {}
+
+  &__label {
+    color: $black;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+
+  &__input {
+    height: 46px;
+    border-radius: 40px;
+    border: 1px solid rgba($gray, 0.5);
+
+    color: $black;
+    font-family: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+    padding: 11px 16px;
+  }
+
+  .agreement {
+    color: $black;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+
+  &__button {
+    padding: 12px 58px 13px 57px;
+    max-width: 265px;
+    width: 100%;
+  }
+
+  .iti__flag-container {
+    left: 16px;
+  }
+
+  .iti--allow-dropdown input[type=tel] {
+    padding-left: 60px;
+  }
+
+  .iti__selected-flag {
+    padding: 0;
+  }
+
+  .iti__arrow {
+    border: none;
+    width: 12px;
+    height: 10px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 9px;
+      height: 7px;
+      content: '';
+      background-image: url(../images/black-arrow.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .iti__country-list {
+    left: -16px;
+    width: 265px;
+    border-radius: 10px;
+    top: 50px;
+    border: 1px solid rgba($gray, 0.5);
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .iti__country {
+    padding: 10px 16px;
+
+    &:hover {
+      background: rgba($gray, 0.5);
+    }
+  }
+}
+
+.form-group {
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown__button {
+    position: relative;
+    display: block;
+    width: 265px;
+    text-align: left;
+
+    background: #FFFFFF;
+    border: 1px solid rgba($gray, 0.5);
+    border-radius: 40px;
+    height: 46px;
+
+    margin-top: 6px;
+    padding: 11px 16px;
+
+    cursor: pointer;
+  }
+
+  .dropdown__button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    width: 9px;
+    height: 7px;
+    background-image: url(../images/black-arrow.svg);
+    pointer-events: none;
+  }
+
+
+  .dropdown__list {
+    display: none;
+
+    position: absolute;
+    left: 0;
+    top: 80px;
+
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+
+    background: #FFFFFF;
+    border: 1px solid rgba($gray, 0.5);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.10);
+    overflow: hidden;
+
+    border-radius: 10px;
+    width: 100%;
+
+    z-index: 1;
+  }
+
+  .dropdown__list--visible {
+    display: block;
+  }
+
+  .dropdown__list-item {
+    margin: 0;
+    padding: 0;
+    border-bottom: 0px;
+    padding: 13px 20px;
+    cursor: pointer;
+
+    font-weight: bold;
+    font-size: 12px;
+    color: $black;
+    text-decoration: none;
+    display: block;
+    padding: 9px 13px;
+    border-radius: 25px;
+    transition: color 0.1s ease-out, background 0.1s ease-out;
+    position: relative;
+    z-index: 5;
+  }
+
+  .dropdown__list-item:hover {
+    color: $white;
+    background: $gray;
+  }
+
+  .dropdown__input-hidden {
+    display: none;
   }
 }

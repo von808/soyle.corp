@@ -123,6 +123,10 @@
     z-index: 3;
     padding: 0px 10px;
     min-width: 168px;
+
+    &:hover {
+      background: unset;
+    }
   }
 
   &-lang__img {
