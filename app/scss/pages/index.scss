@@ -166,7 +166,7 @@
   }
 
   &__img-box {
-    max-width: 330px;
+    max-width: 325px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -196,8 +196,6 @@
 .clients {
   padding: 48px 0 53px;
 
-  &__inner {}
-
   &__title {
     color: $black;
     text-align: center;
@@ -214,8 +212,6 @@
     flex-wrap: wrap;
     gap: 30px;
   }
-
-  &__item-link {}
 
   &__item-img {
     width: 88px;
