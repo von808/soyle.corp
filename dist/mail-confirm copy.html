@@ -13,52 +13,7 @@
 <body>
   <div class="wrapper">
     <div class="burger-menu" id="burger-menu">
-      <div class="user">
-        <a class="user__avatar" href="#">
-          <picture class="user__avatar-img">
-            <img src="images/user-img.png" alt="avatar">
-          </picture>
-        </a>
-        <div class="user__info">
-          <a class="user__name" href="#">Имя пользователя</a>
-          <div class="user__star">
-            <img class="user__star-img" src="images/icon-star.svg" alt="star">
-            4.9
-          </div>
-        </div>
-        <div class="user__arrow" onmouseover="document.getElementById('user-list-b').style.display='block';"
-          onmouseout="document.getElementById('user-list-b').style.display='none';">
-          <img class="user__arrow-img" src="images/user-arrow.svg" alt="arrow">
-          <ul class="user-list" id="user-list-b">
-            <li class="user-list__item">
-              <a class="user-list__item--link" href="#!">Личный кабинет</a>
-            </li>
-            <li class="user-list__item">
-              <a class="user-list__item--link" href="#!">Прогресс обучения</a>
-            </li>
-            <li class="user-list__item">
-              <a class="user-list__item--link" href="#!">Настройки</a>
-            </li>
-            <li class="user-list__item">
-              <a class="user-list__item--link" href="#!">Выход</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="header__nav-menu">
-        <a class="header__nav-menu-link" href="#!">
-          <img class="header__nav-menu-img" src="images/file-checked.svg" alt="file-checked">
-        </a>
-        <a class="header__nav-menu-link" href="#!">
-          <img class="header__nav-menu-img" src="images/bar-chart.svg" alt="bar-chart">
-        </a>
-        <a class="header__nav-menu-link" href="#!">
-          <img class="header__nav-menu-img" src="images/user.svg" alt="user">
-        </a>
-        <a class="header__nav-menu-link" href="#!">
-          Навигатор
-        </a>
-      </div>
+      <a class="btn btn-login" href="#!">Войти</a>
       <div class="header__nav">
         <a class="header__nav-link" href="#!">Уроки</a>
         <a class="header__nav-link" href="#!">Говорим</a>
@@ -102,52 +57,7 @@
               </li>
             </ul>
           </div>
-          <div class="header__nav-menu element-dt">
-            <a class="header__nav-menu-link" href="#!">
-              <img class="header__nav-menu-img" src="images/file-checked.svg" alt="file-checked">
-            </a>
-            <a class="header__nav-menu-link" href="#!">
-              <img class="header__nav-menu-img" src="images/bar-chart.svg" alt="bar-chart">
-            </a>
-            <a class="header__nav-menu-link" href="#!">
-              <img class="header__nav-menu-img" src="images/user.svg" alt="user">
-            </a>
-            <a class="header__nav-menu-link" href="#!">
-              Навигатор
-            </a>
-          </div>
-          <div class="user element-dt">
-            <a class="user__avatar" href="#">
-              <picture class="user__avatar-img">
-                <img src="images/user-img.png" alt="avatar">
-              </picture>
-            </a>
-            <div class="user__info">
-              <a class="user__name" href="#">Имя пользователя</a>
-              <div class="user__star">
-                <img class="user__star-img" src="images/icon-star.svg" alt="star">
-                4.9
-              </div>
-            </div>
-            <div class="user__arrow" onmouseover="document.getElementById('user-list').style.display='block';"
-              onmouseout="document.getElementById('user-list').style.display='none';">
-              <img class="user__arrow-img" src="images/user-arrow.svg" alt="arrow">
-              <ul class="user-list" id="user-list">
-                <li class="user-list__item">
-                  <a class="user-list__item--link" href="#!">Личный кабинет</a>
-                </li>
-                <li class="user-list__item">
-                  <a class="user-list__item--link" href="#!">Прогресс обучения</a>
-                </li>
-                <li class="user-list__item">
-                  <a class="user-list__item--link" href="#!">Настройки</a>
-                </li>
-                <li class="user-list__item">
-                  <a class="user-list__item--link" href="#!">Выход</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <a class="btn btn-login element-dt" href="#!">Войти</a>
           <div class="burger-btn element-mb" id="burger-btn">
             <span class="burger-btn__line"></span>
             <span class="burger-btn__line"></span>
@@ -219,9 +129,26 @@
     </g>
   </symbol>
 </svg>
-    <main class="main">
-
-    </main>
+<main class="main">
+  <section class="mail">
+    <div class="container">
+      <div class="mail__inner">
+        <div class="mail__content">
+          <h2 class="mail__title mail__title--confirm">Подтвердите почту</h2>
+          <div class="mail__text">
+            <p>
+              на почту <a href="#!">ilovenomads@gmail</a>.com отправлено письмо содержащее ссылку для подтверждения
+              регистрации.
+            </p>
+            <p>
+              Если вы не можете найти письмо, проверьте, пожалуйста, папку спам.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 <footer class="footer">
   <div class="footer__Inner">
     <div class="container">
@@ -323,7 +250,6 @@
 <script src="libs/jquery/jquery.js"></script>
 <script src="libs/intlTelInput/js/intlTelInput.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/main2.js"></script>
 </body>
 
 </html>
