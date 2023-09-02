@@ -55,7 +55,7 @@
         <a class="header__nav-menu-link" href="#!">
           <img class="header__nav-menu-img" src="images/user.svg" alt="user">
         </a>
-        <a class="header__nav-menu-link" href="#!">
+        <a class="header__nav-menu-link" href="#popup-nav-1">
           Навигатор
         </a>
       </div>
@@ -112,9 +112,7 @@
             <a class="header__nav-menu-link" href="#!">
               <img class="header__nav-menu-img" src="images/user.svg" alt="user">
             </a>
-            <a class="header__nav-menu-link" href="#!">
-              Навигатор
-            </a>
+            <a class="header__nav-menu-link" href="#popup-nav-1">Навигатор</a>
           </div>
           <div class="user element-dt">
             <a class="user__avatar" href="#">
@@ -219,15 +217,687 @@
     </g>
   </symbol>
 </svg>
-    <main class="main">
-      <section class="progress">
-        <div class="container">
-          <div class="progress__inner">
-            
+<main class="main">
+  <section class="progress">
+    <a class="mistake" href="#!">
+      Нашли ошибку?
+    </a>
+    <div class="container">
+      <div class="progress__inner">
+        <h2 class="progress__title">Мой прогресс</h2>
+        <div class="progress__items">
+          <div class="progress__item">
+            <div class="progress__item-topbar">
+              <h3 class="progress__item-title">Уровень А1</h3>
+              <div class="progress-box">
+                <svg class="progress-ring--1" width="28" height="28">
+                  <circle class="progress-ring__circle progress-ring__circle-1" stroke="#B5E094" stroke-linecap="round" stroke-width="4" cx="14"
+                    cy="14" r="12" fill="transparent" />
+                </svg>
+                <input type="number" class="percent percent-1" value="52" disabled style="color: #B5E094;">
+                <span class="percent-text" style="color: #B5E094;">% пройдено</span>
+                <svg class="progress-ring progress-ring--0" width="28" height="28">
+                  <circle class="progress-ring__circle progress-ring__circle--0" stroke-width="4" cx="14" cy="14" r="12"
+                    fill="transparent" />
+                </svg>
+              </div>
+              <img src="images/black-arrow.svg" alt="arrow">
+            </div>
+            <div class="progress__item-content">
+              <ul class="progress__list">
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 1</span>
+                  <p class="progress__lesson-text">
+                    Мені ешкім іздеген жоқ па? / Меня никто не спрашивал?
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--success">
+                    <span class="progress__lesson-status">Пройдено</span>
+                    <span class="progress__lesson-status-date">21.01.22</span>
+                  </div>
+                  <span class="progress__lesson-scores">20 баллов</span>
+                  <a class="progress__lesson-btn progress__lesson-btn--again" href="#!">Пройти еще раз</a>
+                </li>
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 2</span>
+                  <p class="progress__lesson-text">
+                    Бақыт не деді? / Что сказал( а ) Бакыт?
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--failed">
+                    <span class="progress__lesson-status">Не пройдено</span>
+                  </div>
+                  <span class="progress__lesson-scores"></span>
+                  <a class="progress__lesson-btn progress__lesson-btn--start" href="#!">Пройти тест</a>
+                </li>
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 3</span>
+                  <p class="progress__lesson-text">
+                    Ол кешегі мәжіліске қатыспапты / Оказывается, он не присутствовал на вчерашнем совещании
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--success">
+                    <span class="progress__lesson-status">Пройдено</span>
+                    <span class="progress__lesson-status-date">21.01.22</span>
+                  </div>
+                  <span class="progress__lesson-scores">20 баллов</span>
+                  <a class="progress__lesson-btn progress__lesson-btn--again" href="#!">Пройти еще раз</a>
+                </li>
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 4</span>
+                  <p class="progress__lesson-text">
+                    Сізге емделуге тура келеді / Вам придется пройти курс лечения
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--failed">
+                    <span class="progress__lesson-status">Не пройдено</span>
+                  </div>
+                  <span class="progress__lesson-scores"></span>
+                  <a class="progress__lesson-btn progress__lesson-btn--start" href="#!">Пройти тест</a>
+                </li>
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 5</span>
+                  <p class="progress__lesson-text">
+                    Демалысқа шығайын деп едім / Я хотел(а) выйти в отпуск
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--success">
+                    <span class="progress__lesson-status">Пройдено</span>
+                    <span class="progress__lesson-status-date">21.01.22</span>
+                  </div>
+                  <span class="progress__lesson-scores">20 баллов</span>
+                  <a class="progress__lesson-btn progress__lesson-btn--again" href="#!">Пройти еще раз</a>
+                </li>
+              </ul>
+              <div class="progress__lesson-btns">
+                <a class="progress__lesson-btn-cerificate" href="#popup-certificate-how">
+                  Сертификат о прохождении курса
+                  <svg>
+                    <use xlink:href="#tringle"></use>
+                  </svg>
+                </a>
+                <a class="progress__lesson-btn-start-test" href="#!">
+                  ПРОЙТИ ИТОГОВЫЙ ТЕСТ
+                  <svg>
+                    <use xlink:href="#tringle"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="progress__item">
+            <div class="progress__item-topbar">
+              <h3 class="progress__item-title">Уровень А2</h3>
+              <div class="progress-box">
+                <svg class="progress-ring--1" width="28" height="28">
+                  <circle class="progress-ring__circle progress-ring__circle-2" stroke="#B5E094" stroke-linecap="round"
+                    stroke-width="4" cx="14" cy="14" r="12" fill="transparent" />
+                </svg>
+                <input type="number" class="percent percent-2" value="52" disabled style="color: #B5E094;">
+                <span class="percent-text" style="color: #B5E094;">% пройдено</span>
+                <svg class="progress-ring progress-ring--0" width="28" height="28">
+                  <circle class="progress-ring__circle progress-ring__circle--0" stroke-width="4" cx="14" cy="14" r="12"
+                    fill="transparent" />
+                </svg>
+              </div>
+              <img src="images/black-arrow.svg" alt="arrow">
+            </div>
+            <div class="progress__item-content accardion">
+              <ul class="progress__list">
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 1</span>
+                  <p class="progress__lesson-text">
+                    Мені ешкім іздеген жоқ па? / Меня никто не спрашивал?
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--success">
+                    <span class="progress__lesson-status">Пройдено</span>
+                    <span class="progress__lesson-status-date">21.01.22</span>
+                  </div>
+                  <span class="progress__lesson-scores">20 баллов</span>
+                  <a class="progress__lesson-btn progress__lesson-btn--again" href="#!">Пройти еще раз</a>
+                </li>
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 2</span>
+                  <p class="progress__lesson-text">
+                    Бақыт не деді? / Что сказал( а ) Бакыт?
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--failed">
+                    <span class="progress__lesson-status">Не пройдено</span>
+                  </div>
+                  <span class="progress__lesson-scores"></span>
+                  <a class="progress__lesson-btn progress__lesson-btn--start" href="#!">Пройти тест</a>
+                </li>
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 3</span>
+                  <p class="progress__lesson-text">
+                    Ол кешегі мәжіліске қатыспапты / Оказывается, он не присутствовал на вчерашнем совещании
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--success">
+                    <span class="progress__lesson-status">Пройдено</span>
+                    <span class="progress__lesson-status-date">21.01.22</span>
+                  </div>
+                  <span class="progress__lesson-scores">20 баллов</span>
+                  <a class="progress__lesson-btn progress__lesson-btn--again" href="#!">Пройти еще раз</a>
+                </li>
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 4</span>
+                  <p class="progress__lesson-text">
+                    Сізге емделуге тура келеді / Вам придется пройти курс лечения
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--failed">
+                    <span class="progress__lesson-status">Не пройдено</span>
+                  </div>
+                  <span class="progress__lesson-scores"></span>
+                  <a class="progress__lesson-btn progress__lesson-btn--start" href="#!">Пройти тест</a>
+                </li>
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 5</span>
+                  <p class="progress__lesson-text">
+                    Демалысқа шығайын деп едім / Я хотел(а) выйти в отпуск
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--success">
+                    <span class="progress__lesson-status">Пройдено</span>
+                    <span class="progress__lesson-status-date">21.01.22</span>
+                  </div>
+                  <span class="progress__lesson-scores">20 баллов</span>
+                  <a class="progress__lesson-btn progress__lesson-btn--again" href="#!">Пройти еще раз</a>
+                </li>
+              </ul>
+              <div class="progress__lesson-btns">
+                <a class="progress__lesson-btn-cerificate" href="#popup-certificate-how">
+                  Сертификат о прохождении курса
+                  <svg>
+                    <use xlink:href="#tringle"></use>
+                  </svg>
+                </a>
+                <a class="progress__lesson-btn-start-test" href="#!">
+                  ПРОЙТИ ИТОГОВЫЙ ТЕСТ
+                  <svg>
+                    <use xlink:href="#tringle"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="progress__item">
+            <div class="progress__item-topbar">
+              <h3 class="progress__item-title">Уровень В1</h3>
+              <div class="progress-box">
+                <svg class="progress-ring--1" width="28" height="28">
+                  <circle class="progress-ring__circle progress-ring__circle-3" stroke="#FF8901" stroke-linecap="round"
+                    stroke-width="4" cx="14" cy="14" r="12" fill="transparent" />
+                </svg>
+                <input type="number" class="percent percent-3" value="25" disabled style="color: #FF8901;">
+                <span class="percent-text" style="color: #FF8901;">% пройдено</span>
+                <svg class="progress-ring progress-ring--0" width="28" height="28">
+                  <circle class="progress-ring__circle progress-ring__circle--0" stroke-width="4" cx="14" cy="14" r="12"
+                    fill="transparent" />
+                </svg>
+              </div>
+              <img src="images/black-arrow.svg" alt="arrow">
+            </div>
+            <div class="progress__item-content accardion">
+              <ul class="progress__list">
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 1</span>
+                  <p class="progress__lesson-text">
+                    Мені ешкім іздеген жоқ па? / Меня никто не спрашивал?
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--success">
+                    <span class="progress__lesson-status">Пройдено</span>
+                    <span class="progress__lesson-status-date">21.01.22</span>
+                  </div>
+                  <span class="progress__lesson-scores">20 баллов</span>
+                  <a class="progress__lesson-btn progress__lesson-btn--again" href="#!">Пройти еще раз</a>
+                </li>
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 2</span>
+                  <p class="progress__lesson-text">
+                    Бақыт не деді? / Что сказал( а ) Бакыт?
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--failed">
+                    <span class="progress__lesson-status">Не пройдено</span>
+                  </div>
+                  <span class="progress__lesson-scores"></span>
+                  <a class="progress__lesson-btn progress__lesson-btn--start" href="#!">Пройти тест</a>
+                </li>
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 3</span>
+                  <p class="progress__lesson-text">
+                    Ол кешегі мәжіліске қатыспапты / Оказывается, он не присутствовал на вчерашнем совещании
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--success">
+                    <span class="progress__lesson-status">Пройдено</span>
+                    <span class="progress__lesson-status-date">21.01.22</span>
+                  </div>
+                  <span class="progress__lesson-scores">20 баллов</span>
+                  <a class="progress__lesson-btn progress__lesson-btn--again" href="#!">Пройти еще раз</a>
+                </li>
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 4</span>
+                  <p class="progress__lesson-text">
+                    Сізге емделуге тура келеді / Вам придется пройти курс лечения
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--failed">
+                    <span class="progress__lesson-status">Не пройдено</span>
+                  </div>
+                  <span class="progress__lesson-scores"></span>
+                  <a class="progress__lesson-btn progress__lesson-btn--start" href="#!">Пройти тест</a>
+                </li>
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 5</span>
+                  <p class="progress__lesson-text">
+                    Демалысқа шығайын деп едім / Я хотел(а) выйти в отпуск
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--success">
+                    <span class="progress__lesson-status">Пройдено</span>
+                    <span class="progress__lesson-status-date">21.01.22</span>
+                  </div>
+                  <span class="progress__lesson-scores">20 баллов</span>
+                  <a class="progress__lesson-btn progress__lesson-btn--again" href="#!">Пройти еще раз</a>
+                </li>
+              </ul>
+              <div class="progress__lesson-btns">
+                <a class="progress__lesson-btn-cerificate" href="#popup-certificate-how">
+                  Сертификат о прохождении курса
+                  <svg>
+                    <use xlink:href="#tringle"></use>
+                  </svg>
+                </a>
+                <a class="progress__lesson-btn-start-test" href="#!">
+                  ПРОЙТИ ИТОГОВЫЙ ТЕСТ
+                  <svg>
+                    <use xlink:href="#tringle"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="progress__item">
+            <div class="progress__item-topbar">
+              <h3 class="progress__item-title">Уровень В2</h3>
+              <div class="progress-box">
+                <svg class="progress-ring--1" width="28" height="28">
+                  <circle class="progress-ring__circle progress-ring__circle-4" stroke="#FF8901" stroke-linecap="round"
+                    stroke-width="4" cx="14" cy="14" r="12" fill="transparent" />
+                </svg>
+                <input type="number" class="percent percent-4" value="25" disabled style="color: #FF8901;">
+                <span class="percent-text" style="color: #FF8901;">% пройдено</span>
+                <svg class="progress-ring progress-ring--0" width="28" height="28">
+                  <circle class="progress-ring__circle progress-ring__circle--0" stroke-width="4" cx="14" cy="14" r="12"
+                    fill="transparent" />
+                </svg>
+              </div>
+              <img src="images/black-arrow.svg" alt="arrow">
+            </div>
+            <div class="progress__item-content accardion">
+              <ul class="progress__list">
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 1</span>
+                  <p class="progress__lesson-text">
+                    Мені ешкім іздеген жоқ па? / Меня никто не спрашивал?
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--success">
+                    <span class="progress__lesson-status">Пройдено</span>
+                    <span class="progress__lesson-status-date">21.01.22</span>
+                  </div>
+                  <span class="progress__lesson-scores">20 баллов</span>
+                  <a class="progress__lesson-btn progress__lesson-btn--again" href="#!">Пройти еще раз</a>
+                </li>
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 2</span>
+                  <p class="progress__lesson-text">
+                    Бақыт не деді? / Что сказал( а ) Бакыт?
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--failed">
+                    <span class="progress__lesson-status">Не пройдено</span>
+                  </div>
+                  <span class="progress__lesson-scores"></span>
+                  <a class="progress__lesson-btn progress__lesson-btn--start" href="#!">Пройти тест</a>
+                </li>
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 3</span>
+                  <p class="progress__lesson-text">
+                    Ол кешегі мәжіліске қатыспапты / Оказывается, он не присутствовал на вчерашнем совещании
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--success">
+                    <span class="progress__lesson-status">Пройдено</span>
+                    <span class="progress__lesson-status-date">21.01.22</span>
+                  </div>
+                  <span class="progress__lesson-scores">20 баллов</span>
+                  <a class="progress__lesson-btn progress__lesson-btn--again" href="#!">Пройти еще раз</a>
+                </li>
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 4</span>
+                  <p class="progress__lesson-text">
+                    Сізге емделуге тура келеді / Вам придется пройти курс лечения
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--failed">
+                    <span class="progress__lesson-status">Не пройдено</span>
+                  </div>
+                  <span class="progress__lesson-scores"></span>
+                  <a class="progress__lesson-btn progress__lesson-btn--start" href="#!">Пройти тест</a>
+                </li>
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 5</span>
+                  <p class="progress__lesson-text">
+                    Демалысқа шығайын деп едім / Я хотел(а) выйти в отпуск
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--success">
+                    <span class="progress__lesson-status">Пройдено</span>
+                    <span class="progress__lesson-status-date">21.01.22</span>
+                  </div>
+                  <span class="progress__lesson-scores">20 баллов</span>
+                  <a class="progress__lesson-btn progress__lesson-btn--again" href="#!">Пройти еще раз</a>
+                </li>
+              </ul>
+              <div class="progress__lesson-btns">
+                <a class="progress__lesson-btn-cerificate" href="#popup-certificate-how">
+                  Сертификат о прохождении курса
+                  <svg>
+                    <use xlink:href="#tringle"></use>
+                  </svg>
+                </a>
+                <a class="progress__lesson-btn-start-test" href="#!">
+                  ПРОЙТИ ИТОГОВЫЙ ТЕСТ
+                  <svg>
+                    <use xlink:href="#tringle"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="progress__item">
+            <div class="progress__item-topbar">
+              <h3 class="progress__item-title">Уровень С1</h3>
+              <div class="progress-box">
+                <svg class="progress-ring--1" width="28" height="28">
+                  <circle class="progress-ring__circle progress-ring__circle-5" stroke="#FF8901" stroke-linecap="round"
+                    stroke-width="4" cx="14" cy="14" r="12" fill="transparent" />
+                </svg>
+                <input type="number" class="percent percent-5" value="0" disabled style="color: #FF8901;">
+                <span class="percent-text" style="color: #FF8901;">% пройдено</span>
+                <svg class="progress-ring progress-ring--0" width="28" height="28">
+                  <circle class="progress-ring__circle progress-ring__circle--0" stroke-width="4" cx="14" cy="14" r="12"
+                    fill="transparent" />
+                </svg>
+              </div>
+              <img src="images/black-arrow.svg" alt="arrow">
+            </div>
+            <div class="progress__item-content accardion">
+              <ul class="progress__list">
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 1</span>
+                  <p class="progress__lesson-text">
+                    Мені ешкім іздеген жоқ па? / Меня никто не спрашивал?
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--success">
+                    <span class="progress__lesson-status">Пройдено</span>
+                    <span class="progress__lesson-status-date">21.01.22</span>
+                  </div>
+                  <span class="progress__lesson-scores">20 баллов</span>
+                  <a class="progress__lesson-btn progress__lesson-btn--again" href="#!">Пройти еще раз</a>
+                </li>
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 2</span>
+                  <p class="progress__lesson-text">
+                    Бақыт не деді? / Что сказал( а ) Бакыт?
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--failed">
+                    <span class="progress__lesson-status">Не пройдено</span>
+                  </div>
+                  <span class="progress__lesson-scores"></span>
+                  <a class="progress__lesson-btn progress__lesson-btn--start" href="#!">Пройти тест</a>
+                </li>
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 3</span>
+                  <p class="progress__lesson-text">
+                    Ол кешегі мәжіліске қатыспапты / Оказывается, он не присутствовал на вчерашнем совещании
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--success">
+                    <span class="progress__lesson-status">Пройдено</span>
+                    <span class="progress__lesson-status-date">21.01.22</span>
+                  </div>
+                  <span class="progress__lesson-scores">20 баллов</span>
+                  <a class="progress__lesson-btn progress__lesson-btn--again" href="#!">Пройти еще раз</a>
+                </li>
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 4</span>
+                  <p class="progress__lesson-text">
+                    Сізге емделуге тура келеді / Вам придется пройти курс лечения
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--failed">
+                    <span class="progress__lesson-status">Не пройдено</span>
+                  </div>
+                  <span class="progress__lesson-scores"></span>
+                  <a class="progress__lesson-btn progress__lesson-btn--start" href="#!">Пройти тест</a>
+                </li>
+                <li class="progress__list-item">
+                  <span class="progress__lesson-title">урок 5</span>
+                  <p class="progress__lesson-text">
+                    Демалысқа шығайын деп едім / Я хотел(а) выйти в отпуск
+                  </p>
+                  <div class="progress__lesson-status-box progress__lesson-status-box--success">
+                    <span class="progress__lesson-status">Пройдено</span>
+                    <span class="progress__lesson-status-date">21.01.22</span>
+                  </div>
+                  <span class="progress__lesson-scores">20 баллов</span>
+                  <a class="progress__lesson-btn progress__lesson-btn--again" href="#!">Пройти еще раз</a>
+                </li>
+              </ul>
+              <div class="progress__lesson-btns">
+                <a class="progress__lesson-btn-cerificate" href="#popup-certificate-how">
+                  Сертификат о прохождении курса
+                  <svg>
+                    <use xlink:href="#tringle"></use>
+                  </svg>
+                </a>
+                <a class="progress__lesson-btn-start-test" href="#!">
+                  ПРОЙТИ ИТОГОВЫЙ ТЕСТ
+                  <svg>
+                    <use xlink:href="#tringle"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
+  </section>
+  <div id="popup-registration" class="overlay back">
+    <a class="cancel" href="#!"></a>
+    <div class="popup">
+  
+      <span class="popup__title">Регистрация</span>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <div class="popup-registration">
+          <form class="form" id="popup-form" action="#">
+            <div class="form__item">
+              <label class="form__label">Ф.И.О <span>*</span></label>
+              <input class="form__input" type="text" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label">Название компании <span>*</span></label>
+              <input class="form__input" type="text" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label">Контактный телефон</label>
+              <input class="form__input" type="tel">
+            </div>
+            <div class="form__item">
+              <label class="form__label">E-mail <span>*</span></label>
+              <input class="form__input" type="email" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label">Пароль <span>*</span></label>
+              <input class="form__input" type="password" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label">Повторите пароль <span>*</span></label>
+              <input class="form__input" type="password" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label">Промокод</label>
+              <span>Как получить промокод?</span>
+              <input class="form__input" type="text">
+            </div>
+          </form>
+          <div class="form__element">
+            <input class="form__checkbox input-hidden" id="popup-checkbox" type="checkbox">
+            <label class="form__checkbox-custom" for="popup-checkbox"></label>
+            <label class="form__checkbox-text" for="popup-checkbox">Я принимаю условия <a href="#!">Пользовательского соглашения</a></label>
+          </div>
+          <div class="captcha">
+            <img src="images/captcha.png" alt="captcha">
+          </div>
+          <div class="form__btns">
+            <button class="btn popup-btn" type="submit" form="popup-form">Регистрация</button>
+            <a class="btn-text" href="#!">уже есть аккаунт?</a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <div id="popup-nav-1" class="overlay back">
+    <a class="cancel" href="#!"></a>
+    <div class="popup">
+  
+      <span class="popup__title">Навигатор</span>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <div class="popup-nav">
+          <div class="popup__nav">
+            <a class="popup__nav-link active" href="#popup-nav-1">
+              <img class="popup__nav-img" src="images/file-checked.svg" alt="file">
+              <span class="popup__nav-text">проверка уровня</span>
+            </a>
+            <a class="popup__nav-link" href="#popup-nav-2">
+              <img class="popup__nav-img" src="images/bar-chart.svg" alt="bar">
+              <span class="popup__nav-text">прогресс обучения</span>
+            </a>
+            <a class="popup__nav-link" href="#popup-nav-3">
+              <img class="popup__nav-img" src="images/user.svg" alt="user">
+              <span class="popup__nav-text">личный кабинет</span>
+            </a>
+          </div>
+          <h5 class="popup__content-title">Добро пожаловать!</h5>
+          <div class="popup__content-text">
+            <p>
+              Вы присоединились к корпоративному обучению онлайн курса казахского языка Soyle.<br>
+              Обучаясь по данному онлайн курсу, Вы научитесь правильно произносить слова и грамотно составлять предложения, с успехом
+              овладеете казахской литературно-разговорной речью, сможете составлять собственные диалоги, свободно излагать свои мысли
+              как устно, так и письменно.
+            </p>
+          </div>
+          <a class="btn-orange popup-btn" href="#!">Узнать свой уровень?</a>
+          <a class="btn-line popup-btn" href="#!">Начать обучение с нуля!</a>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <div id="popup-nav-2" class="overlay back">
+    <a class="cancel" href="#!"></a>
+    <div class="popup">
+  
+      <span class="popup__title">Навигатор</span>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <div class="popup-nav">
+          <div class="popup__nav">
+            <a class="popup__nav-link" href="#popup-nav-1">
+              <img class="popup__nav-img" src="images/file-checked.svg" alt="file">
+              <span class="popup__nav-text">проверка уровня</span>
+            </a>
+            <a class="popup__nav-link active" href="#popup-nav-2">
+              <img class="popup__nav-img" src="images/bar-chart.svg" alt="bar">
+              <span class="popup__nav-text">прогресс обучения</span>
+            </a>
+            <a class="popup__nav-link" href="#popup-nav-3">
+              <img class="popup__nav-img" src="images/user.svg" alt="user">
+              <span class="popup__nav-text">личный кабинет</span>
+            </a>
+          </div>
+          <h5 class="popup__content-title">Отслеживайте прогресс обучения!</h5>
+          <div class="popup__content-text">
+            <p>
+              Следить за прогрессом обучения можно в специальном разделе. Ознакомьтесь с тем, что уже изучили, сколько времени на это
+              ушло, какие результаты получены. Пройдите финальный тест и получите свой сертификат уровня.
+            </p>
+          </div>
+          <a class="btn-orange popup-btn" href="#!">Перейти в раздел?</a>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <div id="popup-nav-3" class="overlay back">
+    <a class="cancel" href="#!"></a>
+    <div class="popup">
+  
+      <span class="popup__title">Навигатор</span>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <div class="popup-nav">
+          <div class="popup__nav">
+            <a class="popup__nav-link" href="#popup-nav-1">
+              <img class="popup__nav-img" src="images/file-checked.svg" alt="file">
+              <span class="popup__nav-text">проверка уровня</span>
+            </a>
+            <a class="popup__nav-link" href="#popup-nav-2">
+              <img class="popup__nav-img" src="images/bar-chart.svg" alt="bar">
+              <span class="popup__nav-text">прогресс обучения</span>
+            </a>
+            <a class="popup__nav-link active" href="#popup-nav-3">
+              <img class="popup__nav-img" src="images/user.svg" alt="user">
+              <span class="popup__nav-text">личный кабинет</span>
+            </a>
+          </div>
+          <h5 class="popup__content-title">Личный кабинет</h5>
+          <div class="popup__content-text">
+            <p>
+              Личный кабинет — это ваша индивидуальная страничка,
+              где содержится персональная информация, данные по группе, статистика по обучению и место в рейтинге.
+              Также хранятся полученные сертификаты.
+            </p>
+          </div>
+          <a class="btn-orange popup-btn" href="#!">Перейти в раздел?</a>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <div id="popup-certificate-how" class="overlay back">
+    <a class="cancel" href="#!"></a>
+    <div class="popup">
+  
+      <span class="popup__title">Получение сертификата</span>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <div class="popup-certificate-how">
+          <div class="popup-text">
+            <p>
+              Внимание! Для получения сертификата об окончании уровня, необходимо набрать свыше 60% пройденных уроков.
+            </p>
+          </div>
+          <a class="btn-orange popup-btn" href="#!">понятно</a>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <section style="display: none;">
+    <div id="faq-item-1"><h4 id="faq-title-1"></h4></div>
+    <div id="faq-item-2"><h4 id="faq-title-2"></h4></div>
+    <div id="faq-item-3"><h4 id="faq-title-3"></h4></div>
+    <div id="faq-item-4"><h4 id="faq-title-4"></h4></div>
+    <div id="faq-item-5"><h4 id="faq-title-5"></h4></div>
+    <input id="phone" type="tel">
+    <svg><circle class="progress-ring__circle-1" /></svg><input class="percent-1">
+    <svg><circle class="progress-ring__circle-2" /></svg><input class="percent-2">
+    <svg><circle class="progress-ring__circle-3" /></svg><input class="percent-3">
+    <svg><circle class="progress-ring__circle-4" /></svg><input class="percent-4">
+    <svg><circle class="progress-ring__circle-5" /></svg><input class="percent-5">
+  </section>
+</main>
 <footer class="footer">
   <div class="footer__Inner">
     <div class="container">
@@ -329,7 +999,6 @@
 <script src="libs/jquery/jquery.js"></script>
 <script src="libs/intlTelInput/js/intlTelInput.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/main2.js"></script>
 </body>
 
 </html>

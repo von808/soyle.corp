@@ -2,13 +2,13 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   font-family: montserrat, sans-serif;
+  position: relative;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  position: relative;
 }
 
 .main {
@@ -224,12 +224,6 @@ body {
 
   &__company {}
 
-  &__phone {
-    // .form__input {
-    //   padding: 11px 6px 11px 62px;
-    // }
-  }
-
   &__mail {}
 
   &__headcount {}
@@ -322,6 +316,59 @@ body {
 
     &:hover {
       background: rgba($gray, 0.5);
+    }
+  }
+
+  &__checkbox-custom {
+    display: block;
+    min-width: 28px;
+    height: 28px;
+    border-radius: 3px;
+    border: 1px solid rgba($gray, 0.50);
+    background-color: $white;
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 15.273px;
+      height: 11.553px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url(../images/checkbox-check.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: none;
+    }
+  }
+
+  &__element {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__element input[type=checkbox]:checked+.form__checkbox-custom:before {
+    display: block;
+  }
+
+  &__element .form__checkbox-text {
+    cursor: pointer;
+  }
+
+  &__element a {
+    color: $blue;
+    font-size: inherit;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

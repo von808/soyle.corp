@@ -1,6 +1,138 @@
 <!--=include header-user.html-->
 <!--=include sprite.html-->
-    <main class="main">
+<main class="main">
+  <section class="lesson">
+    <div class="container">
+      <div class="lesson__inner">
+        <h2 class="lesson__title">Сұрауға бола ма? / Можно спросить?</h2>
+        <div class="lesson__topbar">
+          <span class="lesson__numb">Урок №1</span>
+          <span class="lesson__level">Уровень А1</span>
+          <a class="lesson__btn-next" href="#!">Следующий урок</a>
+        </div>
+        <div class="lesson__selected">
+          <div class="lesson__selected-1">
+            <button class="lesson__selected-1-item selected">
+              <img src="images/lesson-1.png" alt="lesson">
+              <span class="lesson__selected-1-title">Новые<br>слова</span>
+            </button>
+            <button class="lesson__selected-1-item">
+              <img src="images/lesson-2.png" alt="lesson">
+              <span class="lesson__selected-1-title">Игры на<br>запоминание</span>
+            </button>
+            <button class="lesson__selected-1-item">
+              <img src="images/lesson-3.png" alt="lesson">
+              <span class="lesson__selected-1-title">Грамматика<br>к уроку</span>
+            </button>
+            <button class="lesson__selected-1-item">
+              <img src="images/lesson-4.png" alt="lesson">
+              <span class="lesson__selected-1-title">Аудио<br>к уроку</span>
+            </button>
+            <button class="lesson__selected-1-item">
+              <img src="images/lesson-5.png" alt="lesson">
+              <span class="lesson__selected-1-title">Видео<br>к уроку</span>
+            </button>
+            <button class="lesson__selected-1-item">
+              <img src="images/lesson-6.png" alt="lesson">
+              <span class="lesson__selected-1-title">Задания<br>на проверку</span>
+            </button>
+          </div>
+          <div class="lesson__selected-2">
+            <button class="lesson__selected-2-item">Звучание и перевод, столбики</button>
+            <button class="lesson__selected-2-item">Словарные карточки</button>
+            <button class="lesson__selected-2-item">Новые слова на фото</button>
+            <button class="lesson__selected-2-item selected">Упражнения на запоминание</button>
+          </div>
+        </div>
+        <div class="lesson__items-head">
+          <img class="lesson__items-head-icon" src="images/icon-info.svg" alt="info">
+          <h4 class="lesson__items-head-title">Урок 1.1</h4>
+          <span class="lesson__items-head-text">Тест на повторение</span>
+          <button class="lesson__items-head-btn">Распечатать</button>
+        </div>
+        <form class="lesson__items">
+          <div class="lesson__item">
+            <h3 class="lesson__item-title">1. Найдите правильный перевод: «Аптека»</h3>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-1" type="radio" name="lesson-1">
+              <label class="lesson__item-radio-label" for="form-radio-1"></label>
+              <label class="lesson__item-radio-text" for="form-radio-1"><span>А:</span> Емхана</label>
+            </div>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-2" type="radio" name="lesson-1">
+              <label class="lesson__item-radio-label" for="form-radio-2"></label>
+              <label class="lesson__item-radio-text" for="form-radio-2"><span>Б:</span> Асхана</label>
+            </div>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-3" type="radio" name="lesson-1">
+              <label class="lesson__item-radio-label" for="form-radio-3"></label>
+              <label class="lesson__item-radio-text" for="form-radio-3"><span>C:</span> Дәріхана</label>
+            </div>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-4" type="radio" name="lesson-1">
+              <label class="lesson__item-radio-label" for="form-radio-4"></label>
+              <label class="lesson__item-radio-text" for="form-radio-4"><span>D:</span> Мейрамхана</label>
+            </div>
+          </div>
+          <div class="lesson__item failed">
+            <h3 class="lesson__item-title">1. Найдите правильный перевод: «Аптека»</h3>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-5" type="radio" name="lesson-2" checked>
+              <label class="lesson__item-radio-label" for="form-radio-5"></label>
+              <label class="lesson__item-radio-text failed" for="form-radio-5"><span>А:</span> Емхана</label>
+            </div>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-6" type="radio" name="lesson-2">
+              <label class="lesson__item-radio-label" for="form-radio-6"></label>
+              <label class="lesson__item-radio-text" for="form-radio-6"><span>Б:</span> Асхана</label>
+            </div>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-7" type="radio" name="lesson-2">
+              <label class="lesson__item-radio-label" for="form-radio-7"></label>
+              <label class="lesson__item-radio-text success" for="form-radio-7"><span>C:</span> Дәріхана</label>
+            </div>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-8" type="radio" name="lesson-2">
+              <label class="lesson__item-radio-label" for="form-radio-8"></label>
+              <label class="lesson__item-radio-text" for="form-radio-8"><span>D:</span> Мейрамхана</label>
+            </div>
+          </div>
+          <div class="lesson__item success">
+            <h3 class="lesson__item-title">1. Найдите правильный перевод: «Аптека»</h3>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-9" type="radio" name="lesson-3">
+              <label class="lesson__item-radio-label" for="form-radio-9"></label>
+              <label class="lesson__item-radio-text" for="form-radio-9"><span>А:</span> Емхана</label>
+            </div>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-10" type="radio" name="lesson-3">
+              <label class="lesson__item-radio-label" for="form-radio-10"></label>
+              <label class="lesson__item-radio-text" for="form-radio-10"><span>Б:</span> Асхана</label>
+            </div>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-11" type="radio" name="lesson-3" checked>
+              <label class="lesson__item-radio-label" for="form-radio-11"></label>
+              <label class="lesson__item-radio-text success" for="form-radio-11"><span>C:</span> Дәріхана</label>
+            </div>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-12" type="radio" name="lesson-3">
+              <label class="lesson__item-radio-label" for="form-radio-12"></label>
+              <label class="lesson__item-radio-text" for="form-radio-12"><span>D:</span> Мейрамхана</label>
+            </div>
+          </div>
+          <a class="btn-orange lesson__items-btn" href="#popup-result-1" type="submit">проверить</a>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!--=include popup-registration.html-->
+  <!--=include popup-nav-1.html-->
+  <!--=include popup-nav-2.html-->
+  <!--=include popup-nav-3.html-->
+  <!--=include popup-result-1.html-->
+  <!--=include popup-result-2.html-->
+  <!--=include popup-certificate.html-->
 
-    </main>
+  <!--=include d-none.html-->
+</main>
 <!--=include footer.html-->

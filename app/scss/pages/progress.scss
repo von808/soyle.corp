@@ -1,0 +1,368 @@
+.progress {
+  padding: 41px 0 87px;
+  background: rgba($blue, 0.05);
+  position: relative;
+
+  .mistake {
+    color: $white;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%;
+    text-transform: uppercase;
+
+    width: 154px;
+    height: 30px;
+    transform: rotate(-90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0px 0px 10px 10px;
+    background: $blue;
+
+    position: fixed;
+    z-index: 12;
+    top: 200px;
+    left: -65px;
+    cursor: pointer;
+  }
+
+  &__inner {}
+
+  &__title {
+    color: $black;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 41px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__item {
+    width: 100%;
+    border-radius: 25px;
+    background: $white;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.10);
+  }
+
+  &__item-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px 27px;
+
+    padding: 10px 24px 10px 26px;
+    cursor: pointer;
+  }
+
+  &__item-topbar.active {
+    .progress__item-title {
+      color: $blue;
+    }
+
+    img {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__item-title {
+    color: $black;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%;
+    text-transform: uppercase;
+  }
+
+  &__item-content {
+    padding: 30px 25px 35px;
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__list-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid rgba($gray, 0.2);
+  }
+
+  &__lesson-title {
+    color: $black;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%;
+    text-transform: uppercase;
+    margin-right: 19px;
+    flex: 0 0 56px;
+  }
+
+  &__lesson-text {
+    color: $gray;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%;
+    text-transform: uppercase;
+
+    width: auto;
+    margin-right: auto;
+  }
+
+  &__lesson-status-box {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    padding-left: 32px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-right: 25px;
+    height: 36px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 20px;
+      height: 20px;
+      left: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  &__lesson-status-box--success {
+    color: $green;
+
+    &::before {
+      background-image: url(../../images/progress-success.svg);
+    }
+  }
+
+  &__lesson-status-box--failed {
+    color: $red;
+
+    &::before {
+      background-image: url(../../images/progress-failed.svg);
+    }
+  }
+
+  &__lesson-status {
+    width: 100px;
+  }
+
+  &__lesson-status-date {}
+
+  &__lesson-scores {
+    color: $black;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+
+    margin-right: 14px;
+    min-width: 75px;
+  }
+
+  &__lesson-btn {
+    min-width: 168px;
+    height: 30px;
+    padding: 3.2px 0 3.8px;
+
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 180%;
+    text-transform: uppercase;
+  }
+
+  &__lesson-btn--again {
+    color: $white;
+    border-radius: 25px;
+    background-color: $blue;
+    padding-left: 30px;
+    padding-right: 10px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 18px;
+      height: 18px;
+      left: 7px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url(../../images/again.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  &__lesson-btn--start {
+    color: $blue;
+    border-radius: 25px;
+    background-color: $white;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.10);
+  }
+
+  &__lesson-btns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 38px;
+  }
+
+  &__lesson-btn-cerificate {
+    max-width: 500px;
+    width: fit-content;
+    height: 87px;
+    padding: 0 28px 0 114px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+
+    border-radius: 10px;
+    border: 1px solid rgba($gray, 0.5);
+
+    color: $black;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 180%;
+    text-transform: uppercase;
+
+    svg {
+      fill: $orange;
+      width: 10px;
+      height: 8px;
+      transform: rotate(-90deg);
+    }
+
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 64px;
+      height: 64px;
+      top: 17px;
+      left: 26px;
+      background-image: url(../../images/certificate.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  &__lesson-btn-start-test {
+    width: fit-content;
+    height: 87px;
+    padding: 0 32px 0 34px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+
+    border-radius: 10px;
+    background: $blue;
+    border: 1px solid $blue;
+
+    color: $white;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 180%;
+    text-transform: uppercase;
+
+    svg {
+      fill: $white;
+      width: 10px;
+      height: 8px;
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+
+
+
+
+
+.progress-box {
+  position: relative;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.progress-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &--0 {
+    z-index: 0;
+  }
+
+  &--1 {
+    z-index: 10;
+  }
+}
+
+.progress-ring__circle {
+  transform-origin: center;
+  transform: rotate(-90deg) scale(1, -1);
+
+  &--0 {
+    stroke: rgba($gray, 0.3);
+  }
+}
+
+.percent {
+  width: 40px;
+  margin-left: 14px;
+
+  font-family: montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.percent-text {
+  position: absolute;
+  left: 58px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: max-content;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
