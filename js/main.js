@@ -72,7 +72,7 @@ qTitle5.onclick = function() {
 const input = document.querySelector("#phone");
 window.intlTelInput(input, {
   onlyCountries: ["kz", "ru", "tr"],
-  utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+  utilsScript: "../libs/intlTelInput/js/utils.js",
 });
 
 if (window.NodeList && !NodeList.prototype.forEach) {
@@ -119,3 +119,74 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
     }
   });
 });
+
+
+$(function () {
+
+  $('.progress__item-topbar').click(function (event) {
+    if ($('.progress__item-content').hasClass('accardion')) {
+      $('.progress__item-topbar').not($(this)).removeClass('active');
+      $('.progress__item-content').not($(this).next()).slideUp(300);
+    }
+    $(this).toggleClass('active').next().slideToggle(300);
+  })
+
+});
+
+const circle = document.querySelector('.progress-ring__circle-1');
+const circle2 = document.querySelector('.progress-ring__circle-2');
+const circle3 = document.querySelector('.progress-ring__circle-3');
+const circle4 = document.querySelector('.progress-ring__circle-4');
+const circle5 = document.querySelector('.progress-ring__circle-5');
+const radius = circle.r.baseVal.value;
+const circumference = 2 * Math.PI * radius;
+const inputPb = document.querySelector('.percent-1');
+
+inputPb.addEventListener('change', function() {
+  setProgress(inputPb.value);
+})
+
+circle.style.strokeDasharray = `${circumference} ${circumference}`;
+circle.style.strokeDashoffset = circumference;
+
+circle2.style.strokeDasharray = `${circumference} ${circumference}`;
+circle2.style.strokeDashoffset = circumference;
+
+circle3.style.strokeDasharray = `${circumference} ${circumference}`;
+circle3.style.strokeDashoffset = circumference;
+
+circle4.style.strokeDasharray = `${circumference} ${circumference}`;
+circle4.style.strokeDashoffset = circumference;
+
+circle5.style.strokeDasharray = `${circumference} ${circumference}`;
+circle5.style.strokeDashoffset = circumference;
+
+const f1 = function setProgress(percent) {
+  const offset = circumference - percent / 100 * circumference;
+  circle.style.strokeDashoffset = offset;
+}
+f1(52);
+
+const f2 = function setProgress(percent) {
+  const offset = circumference - percent / 100 * circumference;
+  circle2.style.strokeDashoffset = offset;
+}
+f2(52);
+
+const f3 = function setProgress(percent) {
+  const offset = circumference - percent / 100 * circumference;
+  circle3.style.strokeDashoffset = offset;
+}
+f3(25);
+
+const f4 = function setProgress(percent) {
+  const offset = circumference - percent / 100 * circumference;
+  circle4.style.strokeDashoffset = offset;
+}
+f4(25);
+
+const f5 = function setProgress(percent) {
+  const offset = circumference - percent / 100 * circumference;
+  circle5.style.strokeDashoffset = offset;
+}
+f5(0);
