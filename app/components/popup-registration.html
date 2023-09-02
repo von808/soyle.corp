@@ -1,0 +1,56 @@
+<div id="popup-registration" class="overlay back">
+  <a class="cancel" href="#!"></a>
+  <div class="popup">
+
+    <span class="popup__title">Регистрация</span>
+    <a class="close" href="#">&times;</a>
+    <div class="content">
+      <div class="popup-registration">
+        <form class="form" id="popup-form" action="#">
+          <div class="form__item">
+            <label class="form__label">Ф.И.О <span>*</span></label>
+            <input class="form__input" type="text" required>
+          </div>
+          <div class="form__item">
+            <label class="form__label">Название компании <span>*</span></label>
+            <input class="form__input" type="text" required>
+          </div>
+          <div class="form__item">
+            <label class="form__label">Контактный телефон</label>
+            <input class="form__input" type="tel">
+          </div>
+          <div class="form__item">
+            <label class="form__label">E-mail <span>*</span></label>
+            <input class="form__input" type="email" required>
+          </div>
+          <div class="form__item">
+            <label class="form__label">Пароль <span>*</span></label>
+            <input class="form__input" type="password" required>
+          </div>
+          <div class="form__item">
+            <label class="form__label">Повторите пароль <span>*</span></label>
+            <input class="form__input" type="password" required>
+          </div>
+          <div class="form__item">
+            <label class="form__label">Промокод</label>
+            <span>Как получить промокод?</span>
+            <input class="form__input" type="text">
+          </div>
+        </form>
+        <div class="form__element">
+          <input class="form__checkbox input-hidden" id="popup-checkbox" type="checkbox">
+          <label class="form__checkbox-custom" for="popup-checkbox"></label>
+          <label class="form__checkbox-text" for="popup-checkbox">Я принимаю условия <a href="#!">Пользовательского соглашения</a></label>
+        </div>
+        <div class="captcha">
+          <img src="images/captcha.png" alt="captcha">
+        </div>
+        <div class="form__btns">
+          <button class="btn popup-btn" type="submit" form="popup-form">Регистрация</button>
+          <a class="btn-text" href="#!">уже есть аккаунт?</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

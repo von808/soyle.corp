@@ -55,7 +55,7 @@
         <a class="header__nav-menu-link" href="#!">
           <img class="header__nav-menu-img" src="images/user.svg" alt="user">
         </a>
-        <a class="header__nav-menu-link" href="#!">
+        <a class="header__nav-menu-link" href="#popup-nav-1">
           Навигатор
         </a>
       </div>
@@ -112,9 +112,7 @@
             <a class="header__nav-menu-link" href="#!">
               <img class="header__nav-menu-img" src="images/user.svg" alt="user">
             </a>
-            <a class="header__nav-menu-link" href="#!">
-              Навигатор
-            </a>
+            <a class="header__nav-menu-link" href="#popup-nav-1">Навигатор</a>
           </div>
           <div class="user element-dt">
             <a class="user__avatar" href="#">
@@ -219,9 +217,428 @@
     </g>
   </symbol>
 </svg>
-    <main class="main">
+<main class="main">
+  <section class="lesson">
+    <div class="container">
+      <div class="lesson__inner">
+        <h2 class="lesson__title">Сұрауға бола ма? / Можно спросить?</h2>
+        <div class="lesson__topbar">
+          <span class="lesson__numb">Урок №1</span>
+          <span class="lesson__level">Уровень А1</span>
+          <a class="lesson__btn-next" href="#!">Следующий урок</a>
+        </div>
+        <div class="lesson__selected">
+          <div class="lesson__selected-1">
+            <button class="lesson__selected-1-item selected">
+              <img src="images/lesson-1.png" alt="lesson">
+              <span class="lesson__selected-1-title">Новые<br>слова</span>
+            </button>
+            <button class="lesson__selected-1-item">
+              <img src="images/lesson-2.png" alt="lesson">
+              <span class="lesson__selected-1-title">Игры на<br>запоминание</span>
+            </button>
+            <button class="lesson__selected-1-item">
+              <img src="images/lesson-3.png" alt="lesson">
+              <span class="lesson__selected-1-title">Грамматика<br>к уроку</span>
+            </button>
+            <button class="lesson__selected-1-item">
+              <img src="images/lesson-4.png" alt="lesson">
+              <span class="lesson__selected-1-title">Аудио<br>к уроку</span>
+            </button>
+            <button class="lesson__selected-1-item">
+              <img src="images/lesson-5.png" alt="lesson">
+              <span class="lesson__selected-1-title">Видео<br>к уроку</span>
+            </button>
+            <button class="lesson__selected-1-item">
+              <img src="images/lesson-6.png" alt="lesson">
+              <span class="lesson__selected-1-title">Задания<br>на проверку</span>
+            </button>
+          </div>
+          <div class="lesson__selected-2">
+            <button class="lesson__selected-2-item">Звучание и перевод, столбики</button>
+            <button class="lesson__selected-2-item">Словарные карточки</button>
+            <button class="lesson__selected-2-item">Новые слова на фото</button>
+            <button class="lesson__selected-2-item selected">Упражнения на запоминание</button>
+          </div>
+        </div>
+        <div class="lesson__items-head">
+          <img class="lesson__items-head-icon" src="images/icon-info.svg" alt="info">
+          <h4 class="lesson__items-head-title">Урок 1.1</h4>
+          <span class="lesson__items-head-text">Тест на повторение</span>
+          <button class="lesson__items-head-btn">Распечатать</button>
+        </div>
+        <form class="lesson__items">
+          <div class="lesson__item">
+            <h3 class="lesson__item-title">1. Найдите правильный перевод: «Аптека»</h3>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-1" type="radio" name="lesson-1">
+              <label class="lesson__item-radio-label" for="form-radio-1"></label>
+              <label class="lesson__item-radio-text" for="form-radio-1"><span>А:</span> Емхана</label>
+            </div>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-2" type="radio" name="lesson-1">
+              <label class="lesson__item-radio-label" for="form-radio-2"></label>
+              <label class="lesson__item-radio-text" for="form-radio-2"><span>Б:</span> Асхана</label>
+            </div>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-3" type="radio" name="lesson-1">
+              <label class="lesson__item-radio-label" for="form-radio-3"></label>
+              <label class="lesson__item-radio-text" for="form-radio-3"><span>C:</span> Дәріхана</label>
+            </div>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-4" type="radio" name="lesson-1">
+              <label class="lesson__item-radio-label" for="form-radio-4"></label>
+              <label class="lesson__item-radio-text" for="form-radio-4"><span>D:</span> Мейрамхана</label>
+            </div>
+          </div>
+          <div class="lesson__item failed">
+            <h3 class="lesson__item-title">1. Найдите правильный перевод: «Аптека»</h3>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-5" type="radio" name="lesson-2" checked>
+              <label class="lesson__item-radio-label" for="form-radio-5"></label>
+              <label class="lesson__item-radio-text failed" for="form-radio-5"><span>А:</span> Емхана</label>
+            </div>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-6" type="radio" name="lesson-2">
+              <label class="lesson__item-radio-label" for="form-radio-6"></label>
+              <label class="lesson__item-radio-text" for="form-radio-6"><span>Б:</span> Асхана</label>
+            </div>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-7" type="radio" name="lesson-2">
+              <label class="lesson__item-radio-label" for="form-radio-7"></label>
+              <label class="lesson__item-radio-text success" for="form-radio-7"><span>C:</span> Дәріхана</label>
+            </div>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-8" type="radio" name="lesson-2">
+              <label class="lesson__item-radio-label" for="form-radio-8"></label>
+              <label class="lesson__item-radio-text" for="form-radio-8"><span>D:</span> Мейрамхана</label>
+            </div>
+          </div>
+          <div class="lesson__item success">
+            <h3 class="lesson__item-title">1. Найдите правильный перевод: «Аптека»</h3>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-9" type="radio" name="lesson-3">
+              <label class="lesson__item-radio-label" for="form-radio-9"></label>
+              <label class="lesson__item-radio-text" for="form-radio-9"><span>А:</span> Емхана</label>
+            </div>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-10" type="radio" name="lesson-3">
+              <label class="lesson__item-radio-label" for="form-radio-10"></label>
+              <label class="lesson__item-radio-text" for="form-radio-10"><span>Б:</span> Асхана</label>
+            </div>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-11" type="radio" name="lesson-3" checked>
+              <label class="lesson__item-radio-label" for="form-radio-11"></label>
+              <label class="lesson__item-radio-text success" for="form-radio-11"><span>C:</span> Дәріхана</label>
+            </div>
+            <div class="lesson__item-radio-box">
+              <input class="input-hidden" id="form-radio-12" type="radio" name="lesson-3">
+              <label class="lesson__item-radio-label" for="form-radio-12"></label>
+              <label class="lesson__item-radio-text" for="form-radio-12"><span>D:</span> Мейрамхана</label>
+            </div>
+          </div>
+          <a class="btn-orange lesson__items-btn" href="#popup-result-1" type="submit">проверить</a>
+        </form>
+      </div>
+    </div>
+  </section>
+  <div id="popup-registration" class="overlay back">
+    <a class="cancel" href="#!"></a>
+    <div class="popup">
+  
+      <span class="popup__title">Регистрация</span>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <div class="popup-registration">
+          <form class="form" id="popup-form" action="#">
+            <div class="form__item">
+              <label class="form__label">Ф.И.О <span>*</span></label>
+              <input class="form__input" type="text" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label">Название компании <span>*</span></label>
+              <input class="form__input" type="text" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label">Контактный телефон</label>
+              <input class="form__input" type="tel">
+            </div>
+            <div class="form__item">
+              <label class="form__label">E-mail <span>*</span></label>
+              <input class="form__input" type="email" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label">Пароль <span>*</span></label>
+              <input class="form__input" type="password" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label">Повторите пароль <span>*</span></label>
+              <input class="form__input" type="password" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label">Промокод</label>
+              <span>Как получить промокод?</span>
+              <input class="form__input" type="text">
+            </div>
+          </form>
+          <div class="form__element">
+            <input class="form__checkbox input-hidden" id="popup-checkbox" type="checkbox">
+            <label class="form__checkbox-custom" for="popup-checkbox"></label>
+            <label class="form__checkbox-text" for="popup-checkbox">Я принимаю условия <a href="#!">Пользовательского соглашения</a></label>
+          </div>
+          <div class="captcha">
+            <img src="images/captcha.png" alt="captcha">
+          </div>
+          <div class="form__btns">
+            <button class="btn popup-btn" type="submit" form="popup-form">Регистрация</button>
+            <a class="btn-text" href="#!">уже есть аккаунт?</a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <div id="popup-nav-1" class="overlay back">
+    <a class="cancel" href="#!"></a>
+    <div class="popup">
+  
+      <span class="popup__title">Навигатор</span>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <div class="popup-nav">
+          <div class="popup__nav">
+            <a class="popup__nav-link active" href="#popup-nav-1">
+              <img class="popup__nav-img" src="images/file-checked.svg" alt="file">
+              <span class="popup__nav-text">проверка уровня</span>
+            </a>
+            <a class="popup__nav-link" href="#popup-nav-2">
+              <img class="popup__nav-img" src="images/bar-chart.svg" alt="bar">
+              <span class="popup__nav-text">прогресс обучения</span>
+            </a>
+            <a class="popup__nav-link" href="#popup-nav-3">
+              <img class="popup__nav-img" src="images/user.svg" alt="user">
+              <span class="popup__nav-text">личный кабинет</span>
+            </a>
+          </div>
+          <h5 class="popup__content-title">Добро пожаловать!</h5>
+          <div class="popup__content-text">
+            <p>
+              Вы присоединились к корпоративному обучению онлайн курса казахского языка Soyle.<br>
+              Обучаясь по данному онлайн курсу, Вы научитесь правильно произносить слова и грамотно составлять предложения, с успехом
+              овладеете казахской литературно-разговорной речью, сможете составлять собственные диалоги, свободно излагать свои мысли
+              как устно, так и письменно.
+            </p>
+          </div>
+          <a class="btn-orange popup-btn" href="#!">Узнать свой уровень?</a>
+          <a class="btn-line popup-btn" href="#!">Начать обучение с нуля!</a>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <div id="popup-nav-2" class="overlay back">
+    <a class="cancel" href="#!"></a>
+    <div class="popup">
+  
+      <span class="popup__title">Навигатор</span>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <div class="popup-nav">
+          <div class="popup__nav">
+            <a class="popup__nav-link" href="#popup-nav-1">
+              <img class="popup__nav-img" src="images/file-checked.svg" alt="file">
+              <span class="popup__nav-text">проверка уровня</span>
+            </a>
+            <a class="popup__nav-link active" href="#popup-nav-2">
+              <img class="popup__nav-img" src="images/bar-chart.svg" alt="bar">
+              <span class="popup__nav-text">прогресс обучения</span>
+            </a>
+            <a class="popup__nav-link" href="#popup-nav-3">
+              <img class="popup__nav-img" src="images/user.svg" alt="user">
+              <span class="popup__nav-text">личный кабинет</span>
+            </a>
+          </div>
+          <h5 class="popup__content-title">Отслеживайте прогресс обучения!</h5>
+          <div class="popup__content-text">
+            <p>
+              Следить за прогрессом обучения можно в специальном разделе. Ознакомьтесь с тем, что уже изучили, сколько времени на это
+              ушло, какие результаты получены. Пройдите финальный тест и получите свой сертификат уровня.
+            </p>
+          </div>
+          <a class="btn-orange popup-btn" href="#!">Перейти в раздел?</a>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <div id="popup-nav-3" class="overlay back">
+    <a class="cancel" href="#!"></a>
+    <div class="popup">
+  
+      <span class="popup__title">Навигатор</span>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <div class="popup-nav">
+          <div class="popup__nav">
+            <a class="popup__nav-link" href="#popup-nav-1">
+              <img class="popup__nav-img" src="images/file-checked.svg" alt="file">
+              <span class="popup__nav-text">проверка уровня</span>
+            </a>
+            <a class="popup__nav-link" href="#popup-nav-2">
+              <img class="popup__nav-img" src="images/bar-chart.svg" alt="bar">
+              <span class="popup__nav-text">прогресс обучения</span>
+            </a>
+            <a class="popup__nav-link active" href="#popup-nav-3">
+              <img class="popup__nav-img" src="images/user.svg" alt="user">
+              <span class="popup__nav-text">личный кабинет</span>
+            </a>
+          </div>
+          <h5 class="popup__content-title">Личный кабинет</h5>
+          <div class="popup__content-text">
+            <p>
+              Личный кабинет — это ваша индивидуальная страничка,
+              где содержится персональная информация, данные по группе, статистика по обучению и место в рейтинге.
+              Также хранятся полученные сертификаты.
+            </p>
+          </div>
+          <a class="btn-orange popup-btn" href="#!">Перейти в раздел?</a>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <div id="popup-result-1" class="overlay back">
+    <a class="cancel" href="#!"></a>
+    <div class="popup">
+  
+      <span class="popup__title">Результат экзамена</span>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <div class="popup-result">
+          <div class="popup-result__level-box">
+            <h5 class="popup-result__level-title">Уровень А1</h5>
+            <span class="popup-result__level-text">
+              Урок 1: Сұрауға бола ма? /
+              Можно спросить?
+            </span>
+          </div>
+          <ul class="popup-result__list">
+            <li class="popup-result__list-item">
+              Заданий:
+              <span>10</span>
+            </li>
+            <li class="popup-result__list-item success">
+              Верных ответов
+              <span>7</span>
+            </li>
+            <li class="popup-result__list-item failed">
+              Неверных ответов
+              <span>7</span>
+            </li>
+            <li class="popup-result__list-item failed">
+              Неотвеченных заданий
+              <span>0</span>
+            </li>
+          </ul>
+          <a class="btn-orange popup-btn" href="#popup-result-2">Пройти повторно</a>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <div id="popup-result-2" class="overlay back">
+    <a class="cancel" href="#!"></a>
+    <div class="popup">
+  
+      <span class="popup__title">Результат экзамена</span>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <div class="popup-result">
+          <div class="popup-result__level-box">
+            <h5 class="popup-result__level-title">Уровень А1</h5>
+            <span class="popup-result__level-text">
+              Урок 1: Сұрауға бола ма? /
+              Можно спросить?
+            </span>
+          </div>
+          <ul class="popup-result__list">
+            <li class="popup-result__list-item">
+              Заданий:
+              <span>10</span>
+            </li>
+            <li class="popup-result__list-item success">
+              Верных ответов
+              <span>7</span>
+            </li>
+            <li class="popup-result__list-item failed">
+              Неверных ответов
+              <span>7</span>
+            </li>
+            <li class="popup-result__list-item failed">
+              Неотвеченных заданий
+              <span>0</span>
+            </li>
+          </ul>
+          <a class="btn-orange popup-btn" href="#popup-certificate">открыть сертификат</a>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <div id="popup-certificate" class="overlay back">
+    <a class="cancel" href="#!"></a>
+    <div class="popup">
+  
+      <span class="popup__title">Ваш сертификат об окончании курса</span>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <div class="popup-certificate">
+          <img class="popup-certificate__img" src="images/certificate.jpg" alt="certificate">
+          <a class="btn-orange popup-btn" href="#!">Перейти в раздел?</a>
+          <div class="share">
+            <span>Поделиться:</span>
+            <ul class="share__items">
+              <li class="share__item"><a class="share__item-link" href=#!"><img class="share__item-img" src="images/share-vk.png" alt="vk"></a></li>
+              <li class="share__item"><a class="share__item-link" href=#!"><img class="share__item-img" src="images/share-twitter.png" alt="twitter"></a></li>
+              <li class="share__item"><a class="share__item-link" href=#!"><img class="share__item-img" src="images/share-facebook.png" alt="facebook"></a></li>
+              <li class="share__item"><a class="share__item-link" href=#!"><img class="share__item-img" src="images/share-odnokl.png" alt="odnokl"></a></li>
+              <li class="share__item"><a class="share__item-link" href=#!"><img class="share__item-img" src="images/share-telegram.png" alt="telegram"></a></li>
+              <li class="share__item"><a class="share__item-link" href=#!"><img class="share__item-img" src="images/share-viber.png" alt="viber"></a></li>
+              <li class="share__item"><a class="share__item-link" href=#!"><img class="share__item-img" src="images/share-whatsapp.png" alt="whatsapp"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
 
-    </main>
+  <section style="display: none;">
+
+    <div id="faq-item-1"><h4 id="faq-title-1"></h4></div>
+
+    <div id="faq-item-2"><h4 id="faq-title-2"></h4></div>
+
+    <div id="faq-item-3"><h4 id="faq-title-3"></h4></div>
+
+    <div id="faq-item-4"><h4 id="faq-title-4"></h4></div>
+
+    <div id="faq-item-5"><h4 id="faq-title-5"></h4></div>
+
+    <input id="phone" type="tel">
+
+    <svg><circle class="progress-ring__circle-1" /></svg><input class="percent-1">
+
+    <svg><circle class="progress-ring__circle-2" /></svg><input class="percent-2">
+
+    <svg><circle class="progress-ring__circle-3" /></svg><input class="percent-3">
+
+    <svg><circle class="progress-ring__circle-4" /></svg><input class="percent-4">
+
+    <svg><circle class="progress-ring__circle-5" /></svg><input class="percent-5">
+
+  </section>
+</main>
 <footer class="footer">
   <div class="footer__Inner">
     <div class="container">
@@ -323,7 +740,6 @@
 <script src="libs/jquery/jquery.js"></script>
 <script src="libs/intlTelInput/js/intlTelInput.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/main2.js"></script>
 </body>
 
 </html>
