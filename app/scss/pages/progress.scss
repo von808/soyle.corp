@@ -155,7 +155,7 @@
     color: $green;
 
     &::before {
-      background-image: url(../../images/progress-success.svg);
+      background-image: url(images/progress-success.svg);
     }
   }
 
@@ -163,7 +163,7 @@
     color: $red;
 
     &::before {
-      background-image: url(../../images/progress-failed.svg);
+      background-image: url(images/progress-failed.svg);
     }
   }
 
@@ -213,7 +213,7 @@
       left: 7px;
       top: 50%;
       transform: translateY(-50%);
-      background-image: url(../../images/again.svg);
+      background-image: url(images/again.svg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -272,7 +272,7 @@
       height: 64px;
       top: 17px;
       left: 26px;
-      background-image: url(../../images/certificate.png);
+      background-image: url(images/certificate.png);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
