@@ -11,7 +11,7 @@
   opacity: 0;
 
 
-  overflow-y: auto;
+  // overflow-y: auto;
 
   &.back {
     background: rgba(0, 0, 0, 0.4);
@@ -75,13 +75,29 @@
 
   .content {
     max-height: 100%;
-    overflow: auto;
+
   }
 }
 
 .popup-registration {
   max-width: 550px;
+  max-height: 550px;
   padding: 59px 95px 30px;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 10px 0px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $blue;
+    border-radius: 20px;
+  }
 
   &__descr {
     display: flex;
@@ -181,6 +197,79 @@
     line-height: 180%;
     text-transform: uppercase;
     flex: 0 0 171px;
+  }
+
+  .form__item-promocode .form__label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form__label .promocode {
+    color: $gray;
+    text-align: right;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    display: inline-block;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '. . . . . . . . . . . . . . . . . . . . . . . . . . .';
+      bottom: -5px;
+      left: 0;
+      width: 99%;
+      height: fit-content;
+      overflow: hidden;
+      color: $orange;
+      display: none;
+    }
+  }
+
+  .form__label .promocode:hover:before {
+    display: inline-block;
+  }
+  .form__label .promocode:hover .promocode__tooltip {
+    display: block;
+  }
+
+  .form__item-promocode .promocode__tooltip {
+    display: block;
+    width: 200px;
+    min-height: 70px;
+    border-radius: 10px;
+    padding: 10px 12px;
+    background: $gray;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.10);
+    z-index: 10;
+
+    color: $white;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: none;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 17px;
+      height: 10px;
+      border: 10px solid transparent;
+      border-top: 10px solid $gray;
+      bottom: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 
@@ -296,12 +385,29 @@
 
 .popup-certificate {
   max-width: 990px;
+  max-height: 550px;
   padding: 38px 106px 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 40px;
+
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 10px 0px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $blue;
+    border-radius: 20px;
+  }
 
   .popup-certificate__img {
     width: 100%;

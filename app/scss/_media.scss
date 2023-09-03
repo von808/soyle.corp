@@ -1,6 +1,16 @@
-@media(max-height:1000px) {
-  #popup-registration .popup {
-    margin: 50px 0;
+// @media(max-height:1000px) {
+//   #popup-registration .popup {
+//     margin: 50px 0;
+//   }
+// }
+
+@media (max-width:1100px) {
+  .footer__bottom-socials {
+    justify-content: center;
+  }
+
+  .studies {
+    margin: 0 20px;
   }
 }
 
