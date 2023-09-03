@@ -2478,7 +2478,7 @@ body {
   padding: 24px 0 100px;
 }
 
-.back {
+.controls__back {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -2488,7 +2488,7 @@ body {
   font-weight: 600;
   line-height: 120%;
 }
-.back svg {
+.controls__back svg {
   width: 15px;
   height: 17px;
 }
