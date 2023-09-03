@@ -2566,7 +2566,7 @@ body {
 
 .rating__item-you::before {
   content: "";
-  background-image: url(../../images/black-arrow.svg);
+  background-image: url(../images/black-arrow.svg);
   background-repeat: no-repeat;
   transform: rotate(-90deg);
   width: 12px;
