@@ -1507,9 +1507,7 @@
             };
             script.onerror = function() {
                 forEachInstance("rejectUtilsScriptPromise");
-                if (handleFailure) {
-                    handleFailure();
-                }
+
             };
             script.className = "iti-load-utils";
             script.async = true;
