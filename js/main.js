@@ -1,15 +1,15 @@
 const burgerBtn = document.getElementById('burger-btn');
 const burgerMenu = document.getElementById('burger-menu');
 
-burgerBtn.onclick = function(){
+burgerBtn.onclick = function () {
   burgerBtn.classList.toggle('active')
   burgerMenu.classList.toggle('active')
 }
 
 $(function () {
 
-  $('.faqs__item-title').click(function(event) {
-    if ($('.faqs__items').hasClass('accardion')){
+  $('.faqs__item-title').click(function (event) {
+    if ($('.faqs__items').hasClass('accardion')) {
       $('.faqs__item-title').not($(this)).removeClass('active');
       $('.faqs__item-text').not($(this).next()).slideUp(300);
     }
@@ -29,7 +29,7 @@ const qItem4 = document.getElementById('faq-item-4')
 const qTitle5 = document.getElementById('faq-title-5')
 const qItem5 = document.getElementById('faq-item-5')
 
-qTitle1.onclick = function() {
+qTitle1.onclick = function () {
   qItem1.classList.toggle('active')
   qItem2.classList.remove('active')
   qItem3.classList.remove('active')
@@ -37,7 +37,7 @@ qTitle1.onclick = function() {
   qItem5.classList.remove('active')
 }
 
-qTitle2.onclick = function() {
+qTitle2.onclick = function () {
   qItem1.classList.remove('active')
   qItem2.classList.toggle('active')
   qItem3.classList.remove('active')
@@ -45,7 +45,7 @@ qTitle2.onclick = function() {
   qItem5.classList.remove('active')
 }
 
-qTitle3.onclick = function() {
+qTitle3.onclick = function () {
   qItem1.classList.remove('active')
   qItem2.classList.remove('active')
   qItem3.classList.toggle('active')
@@ -53,7 +53,7 @@ qTitle3.onclick = function() {
   qItem5.classList.remove('active')
 }
 
-qTitle4.onclick = function() {
+qTitle4.onclick = function () {
   qItem1.classList.remove('active')
   qItem2.classList.remove('active')
   qItem3.classList.remove('active')
@@ -61,7 +61,7 @@ qTitle4.onclick = function() {
   qItem5.classList.remove('active')
 }
 
-qTitle5.onclick = function() {
+qTitle5.onclick = function () {
   qItem1.classList.remove('active')
   qItem2.classList.remove('active')
   qItem3.classList.remove('active')
@@ -142,7 +142,7 @@ const radius = circle.r.baseVal.value;
 const circumference = 2 * Math.PI * radius;
 const inputPb = document.querySelector('.percent-1');
 
-inputPb.addEventListener('change', function() {
+inputPb.addEventListener('change', function () {
   setProgress(inputPb.value);
 })
 
@@ -190,3 +190,18 @@ const f5 = function setProgress(percent) {
   circle5.style.strokeDashoffset = offset;
 }
 f5(0);
+
+
+(function () {
+  var caseItem = document.querySelectorAll('.lesson__selected-1-item'),
+    active = document.getElementsByClassName('selected');
+
+  Array.from(caseItem).forEach(function (item, i, caseItem) {
+    item.addEventListener('click', function (e) {
+      if (active.length > 0 && active[0] !== this)
+        active[0].classList.remove('selected');
+
+      this.classList.toggle('selected');
+    });
+  });
+})();
