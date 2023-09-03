@@ -1,6 +1,59 @@
 <!--=include header-user.html-->
 <!--=include sprite.html-->
-    <main class="main">
+<main class="main">
+  <section class="edit">
+    <div class="container">
+      <div class="edit__inner">
+        <h1 class="edit__title">Редатировать профиль</h1>
 
-    </main>
+        <div class="edit__content">
+          <div class="edit__avatar">
+            <img class="edit__avatar-img" src="../images/avatar.png" alt="avatar">
+            <input class="edit__input" type="file" name="file" id="input__file" accept=".jpg,.jpeg,.png">
+            <label class="edit__label" for="input__file">загрузить фото</label>
+          </div>
+
+          <div class="edit__data">
+            <h2 class="edit__data-title">Ваши данные</h2>
+
+            <form class="edit__form-data" action="">
+              <label class="edit__data-label" for="edit__name">
+                <span>ФИО</span>
+                <input class="edit__data-input" type="text" id="edit__name">
+              </label>
+              <label class="edit__data-label" for="edit__company">
+                <span>Компания</span>
+                <input class="edit__data-input" type="text" id="edit__company">
+              </label>
+            </form>
+          </div>
+
+          <div class="edit__border"></div>
+
+          <div class="edit__data">
+            <h2 class="edit__data-title">Пароль</h2>
+
+            <form class="edit__form-data" action="">
+              <label class="edit__data-label" for="edit__email">
+                <span>Email</span>
+                <input class="edit__data-input" type="email" id="edit__email">
+              </label>
+              <label class="edit__data-label" for="edit__password">
+                <span>Текущий пароль</span>
+                <input class="edit__data-input" type="password" id="edit__password">
+              </label>
+              <label class="edit__data-label" for="edit__newpassword">
+                <span>Новый пароль</span>
+                <input class="edit__data-input" type="password" id="edit__newpassword">
+              </label>
+
+              <button class="btn">Сохранить</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 <!--=include footer.html-->

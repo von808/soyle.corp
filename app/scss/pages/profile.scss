@@ -1,0 +1,375 @@
+.profile__inner {
+  display: flex;
+  gap: 20px;
+  padding: 40px 0 150px;
+}
+
+.profile__main {
+  width: 100%;
+}
+
+.profile__title {
+  color: $black;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 40px;
+}
+
+.profile__content {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.profile__head {
+  display: flex;
+  gap: 28px;
+}
+
+.profile__avatar-img {
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile__head-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__head-name {
+  color: $blue;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 13px;
+}
+
+.profile__head-block {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 16px;
+}
+
+.profile__head-company {
+  display: flex;
+  flex-direction: column;
+  color: $black;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.profile__head-registration {
+  display: flex;
+  flex-direction: column;
+  color: $gray;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.btn--profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  max-width: 220px;
+  text-transform: uppercase;
+  padding: 12px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: $blue;
+  }
+
+  &:hover {
+    svg {
+      fill: $white;
+    }
+  }
+}
+
+.profile__body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &-title {
+    color: $black;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+  }
+
+  .btn {
+    max-width: 321px;
+    text-transform: uppercase;
+    padding: 12px;
+  }
+
+}
+
+.profile__statistics-top,
+.profile__statistics-bottom {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 25px;
+  background: rgba($blue, 0.05);
+  padding: 25px 36px 27px;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.profile__statistics-item {
+  width: 33%;
+}
+
+.profile__statistics-title {
+  display: flex;
+  color: $black;
+  margin-bottom: 26px;
+}
+
+.profile__statistics-border {
+  width: 100%;
+  height: 1px;
+  background: $gray;
+  margin-bottom: 20px;
+}
+
+.profile__statistics-count {
+  display: flex;
+  color: $blue;
+
+  p {
+    border-radius: 25px;
+    background: $white;
+    padding: 16px 25px 17px 21px;
+    width: fit-content;
+  }
+
+}
+
+.profile__statistics-bottom {
+
+  .profile__statistics-item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .profile__statistics-title .profile__statistics-item:last-child {
+    width: 50%;
+  }
+
+  .profile__statistics-count .profile__statistics-item:last-child {
+    width: 50%;
+  }
+
+}
+
+.profile__statistics-bottom .profile__statistics-title p {
+  max-width: 75%;
+}
+
+.profile__statistics-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  border-radius: 25px;
+  background: $white;
+  padding: 16px 25px 17px 21px;
+  color: $blue;
+}
+
+.profile__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 360px;
+  width: 100%;
+}
+
+.profile__sidebar-title {
+  color: $black;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 15px;
+}
+
+.profile__sidebar-item {
+  padding: 20px;
+  border-radius: 25px;
+  border: 1px solid rgba(166, 175, 185, 0.5);
+}
+
+.profile__sidebar-head {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  margin-bottom: 30px;
+}
+
+.profile__sidebar-img {
+  width: 56px;
+  height: 59px;
+}
+
+.profile__sidebar-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile__sidebar-col--title {
+  color: $black;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.profile__sidebar-col--title2 {
+  color: $dark-blue;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.profile__sidebar-col--text {
+  color: $blue;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.profile__sidebar-item .btn {
+  text-transform: uppercase;
+}
+
+.profile__sidebar-border {
+  width: 100%;
+  height: 1px;
+  background: rgba(166, 175, 185, 0.5);
+  margin-bottom: 22px;
+}
+
+.profile__sidebar-curator {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.profile__sidebar-curator--title {
+  color: $black;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.profile__sidebar-curator--link {
+  color: $blue;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.profile__sidebar-curator--link:last-child {
+  margin-bottom: 18px;
+}
+
+.profile__sidebar-curator--profile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 13px;
+}
+
+.profile__sidebar-curator--avatar {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile__sidebar-curator--name {
+  color: $black;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.profile__sidebar-timer {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  border-radius: 25px;
+  background: rgba(62, 128, 206, 0.05);
+  padding: 11px 21px;
+}
+
+.profile__sidebar-timer--block {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.profile__sidebar-timer--item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.profile__sidebar-timer--time {
+  color: $black;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.profile__sidebar-timer--text {
+  color: $black;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.profile__sidebar-timer--period {
+  color: $orange;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
