@@ -231,7 +231,16 @@
   .form__label .promocode:hover:before {
     display: inline-block;
   }
+
   .form__label .promocode:hover .promocode__tooltip {
+    display: block;
+  }
+
+  .form__label .promocode:focus .promocode__tooltip {
+    display: block;
+  }
+
+  .form__label .promocode:target .promocode__tooltip {
     display: block;
   }
 
