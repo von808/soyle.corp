@@ -2,7 +2,7 @@
 <!--=include sprite.html-->
 <main class="main">
 
-  <div class="profile">
+  <section class="profile">
     <div class="container">
       <div class="profile__inner">
 
@@ -25,8 +25,11 @@
                   </div>
                 </div>
                 <a href="#" class="btn-line btn--profile">
-                  <img src="../images/icon-pencil.svg" alt="pencil">
-                  Редактировать</a>
+                  <svg>
+                    <use xlink:href="#pencil"></use>
+                  </svg>
+                  Редактировать
+                </a>
               </div>
             </div>
 
@@ -84,8 +87,10 @@
                     <p>А1, А2</p>
                   </div>
                   <div class="profile__statistics-item">
-                    <p>Сертификат Уровень А1 <img src="../images/icon-download.svg" alt="download"></p>
-                    <p>Сертификат Уровень А2 <img src="../images/icon-download.svg" alt="download"></p>
+                    <a class="profile__statistics-link" href="#" download>Сертификат Уровень А1 <img
+                        src="../images/icon-download.svg" alt="download"></a>
+                    <a class="profile__statistics-link" href="#" download>Сертификат Уровень А2 <img
+                        src="../images/icon-download.svg" alt="download"></a>
                   </div>
                 </div>
               </div>
@@ -99,25 +104,58 @@
           <div class="profile__sidebar-block">
             <h2 class="profile__sidebar-title">Время курса</h2>
             <div class="profile__sidebar-timer">
+              <img src="../images/icon-time.svg" alt="">
 
+              <div class="profile__sidebar-timer--block">
+                <div class="profile__sidebar-timer--item">
+                  <div class="profile__sidebar-timer--time">0:23:12</div>
+                  <p class="profile__sidebar-timer--text">затрачено времени</p>
+                </div>
+                <div class="profile__sidebar-timer--item">
+                  <p class="profile__sidebar-timer--text">до завершения:</p>
+                  <div class="profile__sidebar-timer--period">95 дней 12 час 5 мин</div>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="profile__sidebar-block">
             <h2 class="profile__sidebar-title">Ваша группа</h2>
-            <div class="profile__sidebar-item">
 
+            <div class="profile__sidebar-item">
+              <div class="profile__sidebar-head">
+                <img class="profile__sidebar-img" src="../images/icon-company.svg" alt="">
+                <div class="profile__sidebar-col">
+                  <p class="profile__sidebar-col--title">Company name</p>
+                  <p class="profile__sidebar-col--text">12 участников</p>
+                </div>
+              </div>
+
+              <div class="profile__sidebar-border"></div>
+
+              <div class="profile__sidebar-curator">
+                <h2 class="profile__sidebar-curator--title">Ваш куратор</h2>
+                <div class="profile__sidebar-curator--profile">
+                  <img class="profile__sidebar-curator--avatar" src="../images/avatar.png" alt="avatar">
+                  <h2 class="profile__sidebar-curator--name">Имя куратора</h2>
+                </div>
+                <a class="profile__sidebar-curator--link" href="tel:87004385069"><img src="../images/icon-phone.svg"
+                    alt="phone">+77004385069</a>
+                <a class="profile__sidebar-curator--link" href="emailto:mail@site.com"><img
+                    src="../images/icon-mail.svg" alt="phone">mail@site.com</a>
+              </div>
             </div>
           </div>
 
           <div class="profile__sidebar-block">
             <h2 class="profile__sidebar-title">Ваш рейтинг в группе</h2>
+
             <div class="profile__sidebar-item">
               <div class="profile__sidebar-head">
                 <img class="profile__sidebar-img" src="../images/icon-arrows.svg" alt="">
                 <div class="profile__sidebar-col">
-                  <p class="profile__sidebar-text">100 очков опыта</p>
-                  <p class="profile__sidebar-text">5 место в рейтинге группы</p>
+                  <p class="profile__sidebar-col--title2">100 очков опыта</p>
+                  <p class="profile__sidebar-col--text">5 место в рейтинге группы</p>
                 </div>
               </div>
               <a class="btn" href="#">Рейтинг группы</a>
@@ -127,7 +165,7 @@
 
       </div>
     </div>
-  </div>
+  </section>
 
 </main>
 <!--=include footer.html-->
