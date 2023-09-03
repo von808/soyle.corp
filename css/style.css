@@ -1097,6 +1097,12 @@ body.no-scroll {
 .popup-registration .form__label .promocode:hover .promocode__tooltip {
   display: block;
 }
+.popup-registration .form__label .promocode:focus .promocode__tooltip {
+  display: block;
+}
+.popup-registration .form__label .promocode:target .promocode__tooltip {
+  display: block;
+}
 .popup-registration .form__item-promocode .promocode__tooltip {
   display: block;
   width: 200px;
