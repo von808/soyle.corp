@@ -401,18 +401,196 @@
       </div>
     </div>
   </section>
+  <div id="popup-registration" class="overlay back">
+    <a class="cancel" href="#!"></a>
+    <div class="popup">
+  
+      <span class="popup__title">Регистрация</span>
+      <a class="close" href="#!">&times;</a>
+      <div class="content">
+        <div class="popup-registration">
+          <form class="form" id="popup-form" action="#">
+            <div class="form__item">
+              <label class="form__label">Ф.И.О <span>*</span></label>
+              <input class="form__input" type="text" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label">Название компании <span>*</span></label>
+              <input class="form__input" type="text" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label">Контактный телефон</label>
+              <input class="form__input" type="tel">
+            </div>
+            <div class="form__item">
+              <label class="form__label">E-mail <span>*</span></label>
+              <input class="form__input" type="email" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label">Пароль <span>*</span></label>
+              <input class="form__input" type="password" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label">Повторите пароль <span>*</span></label>
+              <input class="form__input" type="password" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label">Промокод</label>
+              <span>Как получить промокод?</span>
+              <input class="form__input" type="text">
+            </div>
+          </form>
+          <div class="form__element">
+            <input class="form__checkbox input-hidden" id="popup-checkbox" type="checkbox">
+            <label class="form__checkbox-custom" for="popup-checkbox"></label>
+            <label class="form__checkbox-text" for="popup-checkbox">Я принимаю условия <a href="#!">Пользовательского соглашения</a></label>
+          </div>
+          <div class="captcha">
+            <img src="images/captcha.png" alt="captcha">
+          </div>
+          <div class="form__btns">
+            <button class="btn popup-btn" type="submit" form="popup-form">Регистрация</button>
+            <a class="btn-text" href="#!">уже есть аккаунт?</a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <div id="popup-nav-1" class="overlay back">
+    <a class="cancel" href="#!"></a>
+    <div class="popup">
+  
+      <span class="popup__title">Навигатор</span>
+      <a class="close" href="#!">&times;</a>
+      <div class="content">
+        <div class="popup-nav">
+          <div class="popup__nav">
+            <a class="popup__nav-link active" href="#popup-nav-1">
+              <img class="popup__nav-img" src="images/file-checked.svg" alt="file">
+              <span class="popup__nav-text">проверка уровня</span>
+            </a>
+            <a class="popup__nav-link" href="#popup-nav-2">
+              <img class="popup__nav-img" src="images/bar-chart.svg" alt="bar">
+              <span class="popup__nav-text">прогресс обучения</span>
+            </a>
+            <a class="popup__nav-link" href="#popup-nav-3">
+              <img class="popup__nav-img" src="images/user.svg" alt="user">
+              <span class="popup__nav-text">личный кабинет</span>
+            </a>
+          </div>
+          <h5 class="popup__content-title">Добро пожаловать!</h5>
+          <div class="popup__content-text">
+            <p>
+              Вы присоединились к корпоративному обучению онлайн курса казахского языка Soyle.<br>
+              Обучаясь по данному онлайн курсу, Вы научитесь правильно произносить слова и грамотно составлять предложения, с успехом
+              овладеете казахской литературно-разговорной речью, сможете составлять собственные диалоги, свободно излагать свои мысли
+              как устно, так и письменно.
+            </p>
+          </div>
+          <a class="btn-orange popup-btn" href="#!">Узнать свой уровень?</a>
+          <a class="btn-line popup-btn" href="#!">Начать обучение с нуля!</a>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <div id="popup-nav-2" class="overlay back">
+    <a class="cancel" href="#!"></a>
+    <div class="popup">
+  
+      <span class="popup__title">Навигатор</span>
+      <a class="close" href="#!">&times;</a>
+      <div class="content">
+        <div class="popup-nav">
+          <div class="popup__nav">
+            <a class="popup__nav-link" href="#popup-nav-1">
+              <img class="popup__nav-img" src="images/file-checked.svg" alt="file">
+              <span class="popup__nav-text">проверка уровня</span>
+            </a>
+            <a class="popup__nav-link active" href="#popup-nav-2">
+              <img class="popup__nav-img" src="images/bar-chart.svg" alt="bar">
+              <span class="popup__nav-text">прогресс обучения</span>
+            </a>
+            <a class="popup__nav-link" href="#popup-nav-3">
+              <img class="popup__nav-img" src="images/user.svg" alt="user">
+              <span class="popup__nav-text">личный кабинет</span>
+            </a>
+          </div>
+          <h5 class="popup__content-title">Отслеживайте прогресс обучения!</h5>
+          <div class="popup__content-text">
+            <p>
+              Следить за прогрессом обучения можно в специальном разделе. Ознакомьтесь с тем, что уже изучили, сколько времени на это
+              ушло, какие результаты получены. Пройдите финальный тест и получите свой сертификат уровня.
+            </p>
+          </div>
+          <a class="btn-orange popup-btn" href="#!">Перейти в раздел?</a>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <div id="popup-nav-3" class="overlay back">
+    <a class="cancel" href="#!"></a>
+    <div class="popup">
+  
+      <span class="popup__title">Навигатор</span>
+      <a class="close" href="#!">&times;</a>
+      <div class="content">
+        <div class="popup-nav">
+          <div class="popup__nav">
+            <a class="popup__nav-link" href="#popup-nav-1">
+              <img class="popup__nav-img" src="images/file-checked.svg" alt="file">
+              <span class="popup__nav-text">проверка уровня</span>
+            </a>
+            <a class="popup__nav-link" href="#popup-nav-2">
+              <img class="popup__nav-img" src="images/bar-chart.svg" alt="bar">
+              <span class="popup__nav-text">прогресс обучения</span>
+            </a>
+            <a class="popup__nav-link active" href="#popup-nav-3">
+              <img class="popup__nav-img" src="images/user.svg" alt="user">
+              <span class="popup__nav-text">личный кабинет</span>
+            </a>
+          </div>
+          <h5 class="popup__content-title">Личный кабинет</h5>
+          <div class="popup__content-text">
+            <p>
+              Личный кабинет — это ваша индивидуальная страничка,
+              где содержится персональная информация, данные по группе, статистика по обучению и место в рейтинге.
+              Также хранятся полученные сертификаты.
+            </p>
+          </div>
+          <a class="btn-orange popup-btn" href="#!">Перейти в раздел?</a>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
   <section style="display: none;">
+  
     <div id="faq-item-1"><h4 id="faq-title-1"></h4></div>
+  
     <div id="faq-item-2"><h4 id="faq-title-2"></h4></div>
+  
     <div id="faq-item-3"><h4 id="faq-title-3"></h4></div>
+  
     <div id="faq-item-4"><h4 id="faq-title-4"></h4></div>
+  
     <div id="faq-item-5"><h4 id="faq-title-5"></h4></div>
+  
     <input id="phone" type="tel">
+  
     <svg><circle class="progress-ring__circle-1" /></svg><input class="percent-1">
+  
     <svg><circle class="progress-ring__circle-2" /></svg><input class="percent-2">
+  
     <svg><circle class="progress-ring__circle-3" /></svg><input class="percent-3">
+  
     <svg><circle class="progress-ring__circle-4" /></svg><input class="percent-4">
+  
     <svg><circle class="progress-ring__circle-5" /></svg><input class="percent-5">
+  
   </section>
 </main>
 <footer class="footer">
@@ -514,7 +692,7 @@
 </footer>
 </div>
 <script src="libs/jquery/jquery.js"></script>
-<script src="libs/intlTelInput/js/intlTelInput.min.js"></script>
+<script src="libs/intlTelInput/js/intlTelInput.js"></script>
 <script src="js/main.js"></script>
 </body>
 

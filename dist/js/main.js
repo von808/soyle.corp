@@ -4,6 +4,7 @@ const burgerMenu = document.getElementById('burger-menu');
 burgerBtn.onclick = function () {
   burgerBtn.classList.toggle('active')
   burgerMenu.classList.toggle('active')
+  document.body.classList.toggle('no-scroll')
 }
 
 $(function () {

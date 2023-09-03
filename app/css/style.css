@@ -113,6 +113,10 @@ body {
   position: relative;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -1552,13 +1556,13 @@ body {
   color: #B5E094;
 }
 .progress__lesson-status-box--success::before {
-  background-image: url(images/progress-success.svg);
+  background-image: url(../images/progress-success.svg);
 }
 .progress__lesson-status-box--failed {
   color: #FF8C7D;
 }
 .progress__lesson-status-box--failed::before {
-  background-image: url(images/progress-failed.svg);
+  background-image: url(../images/progress-failed.svg);
 }
 .progress__lesson-status {
   width: 100px;
@@ -1599,7 +1603,7 @@ body {
   left: 7px;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url(images/again.svg);
+  background-image: url(../images/again.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1650,7 +1654,7 @@ body {
   height: 64px;
   top: 17px;
   left: 26px;
-  background-image: url(images/certificate.png);
+  background-image: url(../images/certificate.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
